@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ブルアカ生徒いえるかな？</title>
+<meta name="description" content="ブルーアーカイブの生徒を全員言えるかチャレンジするゲーム">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-sub">キヴォトスの生徒、何人言える？</p>
+    <h1>ブルアカ生徒<span>いえるかな？</span></h1>
+  </div>
+</header>
+
+<main>
+  <nav id="modes" class="modes" aria-label="出題範囲"></nav>
+
+  <section class="panel">
+    <div class="stats">
+      <div class="stat"><span class="stat-label">現在</span><span id="found" class="stat-num">0</span><span class="stat-unit">人</span></div>
+      <div class="stat"><span class="stat-label">残り</span><span id="left" class="stat-num">0</span><span class="stat-unit">人</span></div>
+      <div class="stat timer"><span class="stat-label">タイム</span><span id="timer" class="stat-num">00:00.00</span></div>
+    </div>
+
+    <div class="controls">
+      <input id="answer" class="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="「開始」を押してね" disabled>
+      <button id="startBtn" class="btn btn-primary" type="button">開始</button>
+      <button id="giveupBtn" class="btn btn-ghost" type="button" disabled>降参</button>
+    </div>
+    <p id="lastHit" class="last-hit" aria-live="polite">ひらがな・カタカナ・フルネーム（漢字）で入力できます</p>
+
+    <div class="options">
+      <label><input id="optSound" type="checkbox" checked> 効果音</label>
+      <label><input id="optScroll" type="checkbox" checked> 自動スクロール</label>
+      <label><input id="optHint" type="checkbox"> 部活ヒント</label>
+      <span id="best" class="best"></span>
+    </div>
+  </section>
+
+  <div id="board" class="board"></div>
+
+  <footer class="footer">
+    <p>生徒データ出典: <a href="https://schaledb.com/" target="_blank" rel="noopener">SchaleDB</a>（衣装違いは同一人物としてまとめています）</p>
+    <p>非公式のファンメイドゲームです。ブルーアーカイブ © NEXON Games Co., Ltd. &amp; Yostar, Inc.</p>
+  </footer>
+</main>
+
+<dialog id="confirmDlg" class="dlg">
+  <p class="dlg-title">勝負をあきらめて降参しますか？</p>
+  <div class="dlg-btns">
+    <button id="confirmYes" class="btn btn-primary" type="button">はい</button>
+    <button id="confirmNo" class="btn btn-ghost" type="button">いいえ</button>
+  </div>
+</dialog>
+
+<dialog id="resultDlg" class="dlg">
+  <p id="resultHead" class="dlg-head"></p>
+  <p id="resultTitle" class="dlg-title"></p>
+  <p id="resultBody" class="dlg-body"></p>
+  <div class="dlg-btns">
+    <a id="shareX" class="btn btn-primary" target="_blank" rel="noopener">Xでシェア</a>
+    <button id="copyBtn" class="btn btn-ghost" type="button">結果をコピー</button>
+    <button id="closeResult" class="btn btn-ghost" type="button">閉じる</button>
+  </div>
+</dialog>
+
+<script src="data/students.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
