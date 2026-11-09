@@ -2601,19 +2601,6 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900026,
-   "name": "バルバラ",
-   "school": "Arius",
-   "club": "ユスティナ聖徒会",
-   "family": "",
-   "familyRuby": "",
-   "npc": true,
-   "answers": [
-    "ばるばら"
-   ],
-   "fullAnswers": []
-  },
-  {
    "id": 10117,
    "name": "ヒカリ",
    "school": "Highlander",
@@ -2662,7 +2649,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900027,
+   "id": 900026,
    "name": "スオウ",
    "school": "Highlander",
    "club": "ハイランダー監理室",
@@ -2790,7 +2777,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900028,
+   "id": 900027,
    "name": "アキラ",
    "school": "WildHunt",
    "club": "寮監隊",
@@ -2806,7 +2793,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900029,
+   "id": 900028,
    "name": "ヒロミ",
    "school": "WildHunt",
    "club": "寮監隊",
@@ -2851,7 +2838,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900030,
+   "id": 900029,
    "name": "ミナト",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2867,7 +2854,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900031,
+   "id": 900030,
    "name": "アミ",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2883,7 +2870,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900033,
+   "id": 900032,
    "name": "ミツキ",
    "school": "Odyssey",
    "club": "クルーズ運営部",
@@ -2899,7 +2886,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900035,
+   "id": 900034,
    "name": "マキナ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2912,7 +2899,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900036,
+   "id": 900035,
    "name": "サユリ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2925,7 +2912,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900032,
+   "id": 900031,
    "name": "スミカ",
    "school": "Odyssey",
    "club": "トライデント",
@@ -2941,7 +2928,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900034,
+   "id": 900033,
    "name": "サナエ",
    "school": "Odyssey",
    "club": "医務室",
@@ -2957,7 +2944,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900037,
+   "id": 900036,
    "name": "ナナミ",
    "school": "Odyssey",
    "club": "所属不明",
@@ -2973,7 +2960,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900038,
+   "id": 900037,
    "name": "マイ",
    "school": "Chronos",
    "club": "報道部",
@@ -2989,7 +2976,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900039,
+   "id": 900038,
    "name": "シノン",
    "school": "Chronos",
    "club": "報道部",
@@ -3005,7 +2992,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900046,
+   "id": 900045,
    "name": "ソラ",
    "school": "Other",
    "club": "エンジェル24",
@@ -3018,7 +3005,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900040,
+   "id": 900039,
    "name": "カイ",
    "school": "Other",
    "club": "七囚人",
@@ -3034,7 +3021,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900041,
+   "id": 900040,
    "name": "アケミ",
    "school": "Other",
    "club": "七囚人",
@@ -3050,7 +3037,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900042,
+   "id": 900041,
    "name": "ニヤニヤ教授",
    "school": "Other",
    "club": "七囚人",
@@ -3064,7 +3051,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900043,
+   "id": 900042,
    "name": "スイコ",
    "school": "Other",
    "club": "雛鳥組",
@@ -3080,7 +3067,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900044,
+   "id": 900043,
    "name": "ナゴミ",
    "school": "Other",
    "club": "雛鳥組",
@@ -3096,7 +3083,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900045,
+   "id": 900044,
    "name": "ヨウコ",
    "school": "Other",
    "club": "雛鳥組",
