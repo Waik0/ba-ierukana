@@ -1,7 +1,9 @@
-"""SchaleDB から生徒データを取得し data/students.js を生成する。
+"""SchaleDB の生徒データと data/npcs.json から data/students.js を生成する。
 
 使い方: py tools/build_students.py
-衣装違い（「アル（正月）」など）は同一人物としてまとめる。
+- 衣装違い（「アル（正月）」など）は同一人物としてまとめる
+- コラボキャラは除外する
+- data/npcs.json の未実装生徒（NPC）を npc: true で追加する（実装済みなら除外）
 """
 import json
 import re
@@ -10,16 +12,18 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://schaledb.com/data/jp/"
-OUT = Path(__file__).resolve().parent.parent / "data" / "students.js"
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "data" / "students.js"
+NPCS = ROOT / "data" / "npcs.json"
 
-# 学校の表示順。コラボ枠はまとめて「コラボ」にする
+# 学校の表示順（NPC 専用の学校は npcs.json の "before" で差し込む）
 SCHOOL_ORDER = [
     "Abydos", "Gehenna", "Trinity", "Millennium", "Hyakkiyako", "Shanhaijing",
     "RedWinter", "Valkyrie", "SRT", "Arius", "Highlander", "WildHunt", "Odyssey",
 ]
-COLLAB = {"ETC", "Tokiwadai", "Sakugawa", "Other"}
+COLLAB = {"ETC", "Tokiwadai", "Sakugawa"}
 
-# 別名扱いで同一人物にまとめるもの
+# 同一人物としてまとめるもの
 MERGE = {"シロコ＊テラー": "シロコ"}
 
 
@@ -38,74 +42,98 @@ def base_name(name):
     return MERGE.get(n, n)
 
 
+def make_answers(name, family, family_rubies):
+    """名前だけの回答と、フルネームの回答をひらがな化して返す。"""
+    answers = [to_hira(name)]
+    full = []
+    if family:
+        full.append(to_hira(family + name))
+        full += [to_hira(r + name) for r in family_rubies if r]
+    return answers, sorted(set(full))
+
+
 def main():
     students = fetch("students.min.json")
     loc = fetch("localization.min.json")
     clubs = loc["Club"]
+    npc_data = json.loads(NPCS.read_text(encoding="utf-8"))
 
     people = {}
     for s in sorted(students.values(), key=lambda x: x["Id"]):
-        if not s["IsReleased"][0]:
+        if not s["IsReleased"][0] or s["School"] in COLLAB:
             continue
         name = base_name(s["Name"])
         if name in people:
             continue
-        school = "Collab" if s["School"] in COLLAB else s["School"]
         family = s["FamilyName"].strip()
-        personal = s["PersonalName"].strip()
+        answers, full = make_answers(name, family, [s["FamilyNameRuby"].strip()])
         people[name] = {
             "id": s["Id"],
             "name": name,
-            "school": school,
+            "school": s["School"],
             "club": clubs.get(s["Club"], s["Club"]),
-            "clubKey": s["Club"],
             "family": family,
-            "familyRuby": s["FamilyNameRuby"].strip(),
-            "personal": personal,
-            "personalRuby": s["PersonalNameRuby"].strip(),
+            "npc": False,
+            "answers": answers,
+            "fullAnswers": full,
+            "_sort": (s["Club"] == "EmptyClub", clubs.get(s["Club"], s["Club"]), s["Id"]),
         }
 
-    # 回答として受け付ける文字列（ひらがな化して比較する）
-    answer_owner = {}
-    for p in people.values():
-        cands = {p["name"], p["personal"]}
-        if p["family"]:
-            cands.add(p["family"] + p["personal"])
-        if p["familyRuby"]:
-            cands.add(p["familyRuby"] + (p["personalRuby"] or p["personal"]))
-        if p["personalRuby"]:
-            cands.add(p["personalRuby"])
-        p["answers"] = sorted({to_hira(c) for c in cands if c})
-        for a in p["answers"]:
-            answer_owner.setdefault(a, []).append(p["name"])
+    implemented = {(p["family"], p["name"]) for p in people.values()}
+    npc_id = 900000
+    for n in npc_data["students"]:
+        if (n["family"], n["name"]) in implemented:
+            print(f"実装済みのため除外: {n['family']}{n['name']}")
+            continue
+        npc_id += 1
+        answers, full = make_answers(n["name"], n["family"], n["familyRuby"])
+        people[f"npc:{n['family']}{n['name']}"] = {
+            "id": npc_id,
+            "name": n["name"],
+            "school": n["school"],
+            "club": n["club"],
+            "family": n["family"],
+            "npc": True,
+            "answers": answers,
+            "fullAnswers": full,
+            "_sort": (True, n["club"], npc_id),
+        }
 
-    # 複数の生徒にかぶる別名は除外する（名前そのものは必ず残す）
-    for p in people.values():
-        own = to_hira(p["name"])
-        p["answers"] = [a for a in p["answers"] if a == own or len(answer_owner[a]) == 1]
+    order_keys = list(SCHOOL_ORDER)
+    extra = {s["key"]: s for s in npc_data["schools"]}
+    for s in npc_data["schools"]:
+        if s["before"] in order_keys:
+            order_keys.insert(order_keys.index(s["before"]), s["key"])
+        else:
+            order_keys.append(s["key"])
+    order = {k: i for i, k in enumerate(order_keys)}
 
-    order = {k: i for i, k in enumerate(SCHOOL_ORDER + ["Collab"])}
-    lst = sorted(people.values(), key=lambda p: (order.get(p["school"], 99), p["clubKey"] == "EmptyClub", p["club"], p["id"]))
+    lst = sorted(people.values(), key=lambda p: (order.get(p["school"], 99), p["_sort"]))
     for p in lst:
-        del p["clubKey"]
+        del p["_sort"]
 
-    schools = [
-        {"key": k, "name": loc["School"].get(k, "コラボ") if k != "Collab" else "コラボ",
-         "long": loc["SchoolLong"].get(k, "コラボ") if k != "Collab" else "コラボ"}
-        for k in SCHOOL_ORDER + ["Collab"]
-        if any(p["school"] == k for p in lst)
-    ]
+    schools = []
+    for k in order_keys:
+        if not any(p["school"] == k for p in lst):
+            continue
+        if k in extra:
+            schools.append({"key": k, "name": extra[k]["name"], "long": extra[k]["long"]})
+        else:
+            schools.append({"key": k, "name": loc["School"][k], "long": loc["SchoolLong"][k]})
 
     data = {"schools": schools, "students": lst}
     OUT.write_text(
-        "// 自動生成: tools/build_students.py（データ出典: SchaleDB）\n"
+        "// 自動生成: tools/build_students.py（データ出典: SchaleDB / data/npcs.json）\n"
         "window.BA_DATA = " + json.dumps(data, ensure_ascii=False, indent=1) + ";\n",
         encoding="utf-8",
     )
     sys.stdout.reconfigure(encoding="utf-8")
-    print(f"{len(lst)} 人 / {len(schools)} 校 -> {OUT}")
+    normal = [p for p in lst if not p["npc"]]
+    print(f"実装済み {len(normal)} 人 / NPC込み {len(lst)} 人 / {len(schools)} 校 -> {OUT}")
     for s in schools:
-        print(s["name"], sum(1 for p in lst if p["school"] == s["key"]))
+        a = sum(1 for p in normal if p["school"] == s["key"])
+        b = sum(1 for p in lst if p["school"] == s["key"])
+        print(f"  {s['name']}: {a} / {b}")
 
 
 if __name__ == "__main__":

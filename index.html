@@ -19,12 +19,17 @@
 </header>
 
 <main>
+  <nav id="levels" class="levels" aria-label="難易度">
+    <button type="button" class="level" data-level="normal"><b>ノーマル</b><small>実装済みの生徒</small></button>
+    <button type="button" class="level" data-level="hard"><b>むずかしい</b><small>NPC（未実装）も出題</small></button>
+  </nav>
   <nav id="modes" class="modes" aria-label="出題範囲"></nav>
 
   <section class="panel">
     <div class="stats">
       <div class="stat"><span class="stat-label">現在</span><span id="found" class="stat-num">0</span><span class="stat-unit">人</span></div>
       <div class="stat"><span class="stat-label">残り</span><span id="left" class="stat-num">0</span><span class="stat-unit">人</span></div>
+      <div class="stat full"><span class="stat-label">フルネーム</span><span id="fullCount" class="stat-num">0</span><span class="stat-unit">人</span></div>
       <div class="stat timer"><span class="stat-label">タイム</span><span id="timer" class="stat-num">00:00.00</span></div>
     </div>
 
@@ -34,7 +39,7 @@
       <button id="startBtn" class="btn btn-primary" type="button">開始</button>
       <button id="giveupBtn" class="btn btn-ghost" type="button" disabled>降参</button>
     </div>
-    <p id="lastHit" class="last-hit" aria-live="polite">ひらがな・カタカナ・フルネーム（漢字）で入力できます</p>
+    <p id="lastHit" class="last-hit" aria-live="polite">名前で正解、名字まで入れたフルネームなら<span class="gold">ゴールド</span>！</p>
 
     <div class="options">
       <label><input id="optSound" type="checkbox" checked> 効果音</label>
@@ -47,7 +52,7 @@
   <div id="board" class="board"></div>
 
   <footer class="footer">
-    <p>生徒データ出典: <a href="https://schaledb.com/" target="_blank" rel="noopener">SchaleDB</a>（衣装違いは同一人物としてまとめています）</p>
+    <p>生徒データ出典: <a href="https://schaledb.com/" target="_blank" rel="noopener">SchaleDB</a>（衣装違いは同一人物としてまとめています）／NPCデータ: ニコニコ大百科・Gamerch ブルアカ攻略Wiki</p>
     <p>非公式のファンメイドゲームです。ブルーアーカイブ © NEXON Games Co., Ltd. &amp; Yostar, Inc.</p>
   </footer>
 </main>

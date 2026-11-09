@@ -1,6 +1,11 @@
-// 自動生成: tools/build_students.py（データ出典: SchaleDB）
+// 自動生成: tools/build_students.py（データ出典: SchaleDB / data/npcs.json）
 window.BA_DATA = {
  "schools": [
+  {
+   "key": "GSC",
+   "name": "連邦生徒会",
+   "long": "連邦生徒会"
+  },
   {
    "key": "Abydos",
    "name": "アビドス",
@@ -67,24 +72,129 @@ window.BA_DATA = {
    "long": "オデュッセイア海洋高等学校"
   },
   {
-   "key": "Collab",
-   "name": "コラボ",
-   "long": "コラボ"
+   "key": "Chronos",
+   "name": "クロノス",
+   "long": "クロノススクール"
+  },
+  {
+   "key": "Other",
+   "name": "その他",
+   "long": "その他（七囚人など）"
   }
  ],
  "students": [
+  {
+   "id": 900002,
+   "name": "モモカ",
+   "school": "GSC",
+   "club": "交通室",
+   "family": "由良木",
+   "npc": true,
+   "answers": [
+    "ももか"
+   ],
+   "fullAnswers": [
+    "ゆらぎももか",
+    "由良木ももか"
+   ]
+  },
+  {
+   "id": 900006,
+   "name": "ハイネ",
+   "school": "GSC",
+   "club": "体育室",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "はいね"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900007,
+   "name": "スモモ",
+   "school": "GSC",
+   "club": "所属不明",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "すもも"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900001,
+   "name": "リン",
+   "school": "GSC",
+   "club": "統括室",
+   "family": "七神",
+   "npc": true,
+   "answers": [
+    "りん"
+   ],
+   "fullAnswers": [
+    "なながみりん",
+    "七神りん"
+   ]
+  },
+  {
+   "id": 900003,
+   "name": "アユム",
+   "school": "GSC",
+   "club": "調停室",
+   "family": "岩櫃",
+   "npc": true,
+   "answers": [
+    "あゆむ"
+   ],
+   "fullAnswers": [
+    "いわびつあゆむ",
+    "岩櫃あゆむ"
+   ]
+  },
+  {
+   "id": 900005,
+   "name": "アオイ",
+   "school": "GSC",
+   "club": "財務室",
+   "family": "扇喜",
+   "npc": true,
+   "answers": [
+    "あおい"
+   ],
+   "fullAnswers": [
+    "おうぎあおい",
+    "おきあおい",
+    "扇喜あおい"
+   ]
+  },
+  {
+   "id": 900004,
+   "name": "カヤ",
+   "school": "GSC",
+   "club": "防衛室",
+   "family": "不知火",
+   "npc": true,
+   "answers": [
+    "かや"
+   ],
+   "fullAnswers": [
+    "しらぬいかや",
+    "不知火かや"
+   ]
+  },
   {
    "id": 10005,
    "name": "ホシノ",
    "school": "Abydos",
    "club": "対策委員会",
    "family": "小鳥遊",
-   "familyRuby": "たかなし",
-   "personal": "ホシノ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ほしの"
+   ],
+   "fullAnswers": [
     "たかなしほしの",
-    "ほしの",
     "小鳥遊ほしの"
    ]
   },
@@ -94,11 +204,11 @@ window.BA_DATA = {
    "school": "Abydos",
    "club": "対策委員会",
    "family": "砂狼",
-   "familyRuby": "すなおおかみ",
-   "personal": "シロコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "しろこ",
+    "しろこ"
+   ],
+   "fullAnswers": [
     "すなおおかみしろこ",
     "砂狼しろこ"
    ]
@@ -109,12 +219,12 @@ window.BA_DATA = {
    "school": "Abydos",
    "club": "対策委員会",
    "family": "十六夜",
-   "familyRuby": "いざよい",
-   "personal": "ノノミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ののみ"
+   ],
+   "fullAnswers": [
     "いざよいののみ",
-    "ののみ",
     "十六夜ののみ"
    ]
   },
@@ -124,12 +234,12 @@ window.BA_DATA = {
    "school": "Abydos",
    "club": "対策委員会",
    "family": "黒見",
-   "familyRuby": "くろみ",
-   "personal": "セリカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "せりか"
+   ],
+   "fullAnswers": [
     "くろみせりか",
-    "せりか",
     "黒見せりか"
    ]
   },
@@ -139,13 +249,28 @@ window.BA_DATA = {
    "school": "Abydos",
    "club": "対策委員会",
    "family": "奥空",
-   "familyRuby": "おくそら",
-   "personal": "アヤネ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あやね",
+    "あやね"
+   ],
+   "fullAnswers": [
     "おくそらあやね",
     "奥空あやね"
+   ]
+  },
+  {
+   "id": 900008,
+   "name": "ユメ",
+   "school": "Abydos",
+   "club": "アビドス生徒会",
+   "family": "梔子",
+   "npc": true,
+   "answers": [
+    "ゆめ"
+   ],
+   "fullAnswers": [
+    "くちなしゆめ",
+    "梔子ゆめ"
    ]
   },
   {
@@ -154,11 +279,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "キラキラ部",
    "family": "夜桜",
-   "familyRuby": "よざくら",
-   "personal": "キララ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "きらら",
+    "きらら"
+   ],
+   "fullAnswers": [
     "よざくらきらら",
     "夜桜きらら"
    ]
@@ -169,11 +294,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "キラキラ部",
    "family": "旗見",
-   "familyRuby": "はたみ",
-   "personal": "エリカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "えりか",
+    "えりか"
+   ],
+   "fullAnswers": [
     "はたみえりか",
     "旗見えりか"
    ]
@@ -184,11 +309,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "パンデモニウム・ソサエティー",
    "family": "元宮",
-   "familyRuby": "もとみや",
-   "personal": "チアキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ちあき",
+    "ちあき"
+   ],
+   "fullAnswers": [
     "もとみやちあき",
     "元宮ちあき"
    ]
@@ -199,12 +324,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "パンデモニウム・ソサエティー",
    "family": "羽沼",
-   "familyRuby": "はぬま",
-   "personal": "マコト",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "まこと"
+   ],
+   "fullAnswers": [
     "はぬままこと",
-    "まこと",
     "羽沼まこと"
    ]
   },
@@ -214,12 +339,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "パンデモニウム・ソサエティー",
    "family": "京極",
-   "familyRuby": "きょうごく",
-   "personal": "サツキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "さつき"
+   ],
+   "fullAnswers": [
     "きょうごくさつき",
-    "さつき",
     "京極さつき"
    ]
   },
@@ -229,11 +354,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "パンデモニウム・ソサエティー",
    "family": "棗",
-   "familyRuby": "なつめ",
-   "personal": "イロハ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いろは",
+    "いろは"
+   ],
+   "fullAnswers": [
     "なつめいろは",
     "棗いろは"
    ]
@@ -244,11 +369,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "パンデモニウム・ソサエティー",
    "family": "丹花",
-   "familyRuby": "たんが",
-   "personal": "イブキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いぶき",
+    "いぶき"
+   ],
+   "fullAnswers": [
     "たんがいぶき",
     "丹花いぶき"
    ]
@@ -259,11 +384,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "便利屋68",
    "family": "陸八魔",
-   "familyRuby": "りくはちま",
-   "personal": "アル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ある",
+    "ある"
+   ],
+   "fullAnswers": [
     "りくはちまある",
     "陸八魔ある"
    ]
@@ -274,12 +399,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "便利屋68",
    "family": "浅黄",
-   "familyRuby": "あさぎ",
-   "personal": "ムツキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "むつき"
+   ],
+   "fullAnswers": [
     "あさぎむつき",
-    "むつき",
     "浅黄むつき"
    ]
   },
@@ -289,12 +414,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "便利屋68",
    "family": "鬼方",
-   "familyRuby": "おにかた",
-   "personal": "カヨコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "かよこ"
+   ],
+   "fullAnswers": [
     "おにかたかよこ",
-    "かよこ",
     "鬼方かよこ"
    ]
   },
@@ -304,12 +429,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "便利屋68",
    "family": "伊草",
-   "familyRuby": "いぐさ",
-   "personal": "ハルカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "はるか"
+   ],
+   "fullAnswers": [
     "いぐさはるか",
-    "はるか",
     "伊草はるか"
    ]
   },
@@ -319,11 +444,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "救急医学部",
    "family": "氷室",
-   "familyRuby": "ひむろ",
-   "personal": "セナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "せな",
+    "せな"
+   ],
+   "fullAnswers": [
     "ひむろせな",
     "氷室せな"
    ]
@@ -334,12 +459,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "温泉開発部",
    "family": "下倉",
-   "familyRuby": "しもくら",
-   "personal": "メグ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "めぐ"
+   ],
+   "fullAnswers": [
     "しもくらめぐ",
-    "めぐ",
     "下倉めぐ"
    ]
   },
@@ -349,11 +474,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "温泉開発部",
    "family": "鬼怒川",
-   "familyRuby": "きぬがわ",
-   "personal": "カスミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "かすみ",
+    "かすみ"
+   ],
+   "fullAnswers": [
     "きぬがわかすみ",
     "鬼怒川かすみ"
    ]
@@ -364,12 +489,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "給食部",
    "family": "牛牧",
-   "familyRuby": "うしまき",
-   "personal": "ジュリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "じゅり"
+   ],
+   "fullAnswers": [
     "うしまきじゅり",
-    "じゅり",
     "牛牧じゅり"
    ]
   },
@@ -379,12 +504,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "給食部",
    "family": "愛清",
-   "familyRuby": "あいきよ",
-   "personal": "フウカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ふうか"
+   ],
+   "fullAnswers": [
     "あいきよふうか",
-    "ふうか",
     "愛清ふうか"
    ]
   },
@@ -394,12 +519,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "美食研究会",
    "family": "黒舘",
-   "familyRuby": "くろだて",
-   "personal": "ハルナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "はるな"
+   ],
+   "fullAnswers": [
     "くろだてはるな",
-    "はるな",
     "黒舘はるな"
    ]
   },
@@ -409,11 +534,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "美食研究会",
    "family": "獅子堂",
-   "familyRuby": "ししどう",
-   "personal": "イズミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いずみ",
+    "いずみ"
+   ],
+   "fullAnswers": [
     "ししどういずみ",
     "獅子堂いずみ"
    ]
@@ -424,11 +549,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "美食研究会",
    "family": "鰐渕",
-   "familyRuby": "わにぶち",
-   "personal": "アカリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あかり",
+    "あかり"
+   ],
+   "fullAnswers": [
     "わにぶちあかり",
     "鰐渕あかり"
    ]
@@ -439,12 +564,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "美食研究会",
    "family": "赤司",
-   "familyRuby": "あかし",
-   "personal": "ジュンコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "じゅんこ"
+   ],
+   "fullAnswers": [
     "あかしじゅんこ",
-    "じゅんこ",
     "赤司じゅんこ"
    ]
   },
@@ -454,12 +579,12 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "風紀委員会",
    "family": "空崎",
-   "familyRuby": "そらさき",
-   "personal": "ヒナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひな"
+   ],
+   "fullAnswers": [
     "そらさきひな",
-    "ひな",
     "空崎ひな"
    ]
   },
@@ -469,11 +594,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "風紀委員会",
    "family": "銀鏡",
-   "familyRuby": "しろみ",
-   "personal": "イオリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いおり",
+    "いおり"
+   ],
+   "fullAnswers": [
     "しろみいおり",
     "銀鏡いおり"
    ]
@@ -484,11 +609,11 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "風紀委員会",
    "family": "火宮",
-   "familyRuby": "ひのみや",
-   "personal": "チナツ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ちなつ",
+    "ちなつ"
+   ],
+   "fullAnswers": [
     "ひのみやちなつ",
     "火宮ちなつ"
    ]
@@ -499,13 +624,58 @@ window.BA_DATA = {
    "school": "Gehenna",
    "club": "風紀委員会",
    "family": "天雨",
-   "familyRuby": "あまう",
-   "personal": "アコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あこ",
+    "あこ"
+   ],
+   "fullAnswers": [
     "あまうあこ",
     "天雨あこ"
+   ]
+  },
+  {
+   "id": 900009,
+   "name": "マユミ",
+   "school": "Gehenna",
+   "club": "ゲヘナ再興委員会",
+   "family": "降旗",
+   "npc": true,
+   "answers": [
+    "まゆみ"
+   ],
+   "fullAnswers": [
+    "ふりはたまゆみ",
+    "降旗まゆみ"
+   ]
+  },
+  {
+   "id": 900010,
+   "name": "カレン",
+   "school": "Gehenna",
+   "club": "ゲヘナ再興委員会",
+   "family": "明楽",
+   "npc": true,
+   "answers": [
+    "かれん"
+   ],
+   "fullAnswers": [
+    "みょうらくかれん",
+    "明楽かれん"
+   ]
+  },
+  {
+   "id": 900011,
+   "name": "ショウコ",
+   "school": "Gehenna",
+   "club": "ゲヘナ再興委員会",
+   "family": "五十嵐",
+   "npc": true,
+   "answers": [
+    "しょうこ"
+   ],
+   "fullAnswers": [
+    "いがらししょうこ",
+    "五十嵐しょうこ"
    ]
   },
   {
@@ -514,11 +684,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "シスターフッド",
    "family": "若葉",
-   "familyRuby": "わかば",
-   "personal": "ヒナタ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ひなた",
+    "ひなた"
+   ],
+   "fullAnswers": [
     "わかばひなた",
     "若葉ひなた"
    ]
@@ -529,12 +699,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "シスターフッド",
    "family": "伊落",
-   "familyRuby": "いおち",
-   "personal": "マリー",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "まりー"
+   ],
+   "fullAnswers": [
     "いおちまりー",
-    "まりー",
     "伊落まりー"
    ]
   },
@@ -544,12 +714,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "シスターフッド",
    "family": "歌住",
-   "familyRuby": "うたずみ",
-   "personal": "サクラコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "さくらこ"
+   ],
+   "fullAnswers": [
     "うたずみさくらこ",
-    "さくらこ",
     "歌住さくらこ"
    ]
   },
@@ -559,11 +729,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "ティーパーティー",
    "family": "聖園",
-   "familyRuby": "みその",
-   "personal": "ミカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "みか",
+    "みか"
+   ],
+   "fullAnswers": [
     "みそのみか",
     "聖園みか"
    ]
@@ -574,11 +744,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "ティーパーティー",
    "family": "百合園",
-   "familyRuby": "ゆりぞの",
-   "personal": "セイア",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "せいあ",
+    "せいあ"
+   ],
+   "fullAnswers": [
     "ゆりぞのせいあ",
     "百合園せいあ"
    ]
@@ -589,12 +759,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "ティーパーティー",
    "family": "桐藤",
-   "familyRuby": "きりふじ",
-   "personal": "ナギサ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "なぎさ"
+   ],
+   "fullAnswers": [
     "きりふじなぎさ",
-    "なぎさ",
     "桐藤なぎさ"
    ]
   },
@@ -604,12 +774,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "トリニティ自警団",
    "family": "宇沢",
-   "familyRuby": "うざわ",
-   "personal": "レイサ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "れいさ"
+   ],
+   "fullAnswers": [
     "うざわれいさ",
-    "れいさ",
     "宇沢れいさ"
    ]
   },
@@ -619,11 +789,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "トリニティ自警団",
    "family": "守月",
-   "familyRuby": "もりづき",
-   "personal": "スズミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "すずみ",
+    "すずみ"
+   ],
+   "fullAnswers": [
     "もりづきすずみ",
     "守月すずみ"
    ]
@@ -634,11 +804,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "図書委員会",
    "family": "古関",
-   "familyRuby": "こぜき",
-   "personal": "ウイ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "うい",
+    "うい"
+   ],
+   "fullAnswers": [
     "こぜきうい",
     "古関うい"
    ]
@@ -649,12 +819,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "図書委員会",
    "family": "円堂",
-   "familyRuby": "えんどう",
-   "personal": "シミコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "しみこ"
+   ],
+   "fullAnswers": [
     "えんどうしみこ",
-    "しみこ",
     "円堂しみこ"
    ]
   },
@@ -664,11 +834,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "放課後スイーツ部",
    "family": "柚鳥",
-   "familyRuby": "ゆとり",
-   "personal": "ナツ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "なつ",
+    "なつ"
+   ],
+   "fullAnswers": [
     "ゆとりなつ",
     "柚鳥なつ"
    ]
@@ -679,11 +849,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "放課後スイーツ部",
    "family": "杏山",
-   "familyRuby": "きょうやま",
-   "personal": "カズサ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "かずさ",
+    "かずさ"
+   ],
+   "fullAnswers": [
     "きょうやまかずさ",
     "杏山かずさ"
    ]
@@ -694,12 +864,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "放課後スイーツ部",
    "family": "伊原木",
-   "familyRuby": "いばらぎ",
-   "personal": "ヨシミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "よしみ"
+   ],
+   "fullAnswers": [
     "いばらぎよしみ",
-    "よしみ",
     "伊原木よしみ"
    ]
   },
@@ -709,11 +879,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "放課後スイーツ部",
    "family": "栗村",
-   "familyRuby": "くりむら",
-   "personal": "アイリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あいり",
+    "あいり"
+   ],
+   "fullAnswers": [
     "くりむらあいり",
     "栗村あいり"
    ]
@@ -724,12 +894,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "救護騎士団",
    "family": "鷲見",
-   "familyRuby": "すみ",
-   "personal": "セリナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "せりな"
+   ],
+   "fullAnswers": [
     "すみせりな",
-    "せりな",
     "鷲見せりな"
    ]
   },
@@ -739,12 +909,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "救護騎士団",
    "family": "蒼森",
-   "familyRuby": "あおもり",
-   "personal": "ミネ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みね"
+   ],
+   "fullAnswers": [
     "あおもりみね",
-    "みね",
     "蒼森みね"
    ]
   },
@@ -754,12 +924,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "救護騎士団",
    "family": "朝顔",
-   "familyRuby": "あさがお",
-   "personal": "ハナエ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "はなえ"
+   ],
+   "fullAnswers": [
     "あさがおはなえ",
-    "はなえ",
     "朝顔はなえ"
    ]
   },
@@ -769,12 +939,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "正義実現委員会",
    "family": "剣先",
-   "familyRuby": "けんざき",
-   "personal": "ツルギ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "つるぎ"
+   ],
+   "fullAnswers": [
     "けんざきつるぎ",
-    "つるぎ",
     "剣先つるぎ"
    ]
   },
@@ -784,11 +954,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "正義実現委員会",
    "family": "仲正",
-   "familyRuby": "なかまさ",
-   "personal": "イチカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いちか",
+    "いちか"
+   ],
+   "fullAnswers": [
     "なかまさいちか",
     "仲正いちか"
    ]
@@ -799,11 +969,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "正義実現委員会",
    "family": "羽川",
-   "familyRuby": "はねかわ",
-   "personal": "ハスミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "はすみ",
+    "はすみ"
+   ],
+   "fullAnswers": [
     "はねかわはすみ",
     "羽川はすみ"
    ]
@@ -814,12 +984,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "正義実現委員会",
    "family": "静山",
-   "familyRuby": "しずやま",
-   "personal": "マシロ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ましろ"
+   ],
+   "fullAnswers": [
     "しずやまましろ",
-    "ましろ",
     "静山ましろ"
    ]
   },
@@ -829,12 +999,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "補習授業部",
    "family": "阿慈谷",
-   "familyRuby": "あじたに",
-   "personal": "ヒフミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひふみ"
+   ],
+   "fullAnswers": [
     "あじたにひふみ",
-    "ひふみ",
     "阿慈谷ひふみ"
    ]
   },
@@ -844,11 +1014,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "補習授業部",
    "family": "白洲",
-   "familyRuby": "しらす",
-   "personal": "アズサ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あずさ",
+    "あずさ"
+   ],
+   "fullAnswers": [
     "しらすあずさ",
     "白洲あずさ"
    ]
@@ -859,11 +1029,11 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "補習授業部",
    "family": "下江",
-   "familyRuby": "しもえ",
-   "personal": "コハル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "こはる",
+    "こはる"
+   ],
+   "fullAnswers": [
     "しもえこはる",
     "下江こはる"
    ]
@@ -874,14 +1044,26 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "補習授業部",
    "family": "浦和",
-   "familyRuby": "うらわ",
-   "personal": "ハナコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "はなこ"
+   ],
+   "fullAnswers": [
     "うらわはなこ",
-    "はなこ",
     "浦和はなこ"
    ]
+  },
+  {
+   "id": 900012,
+   "name": "チエル",
+   "school": "Trinity",
+   "club": "図書委員会",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "ちえる"
+   ],
+   "fullAnswers": []
   },
   {
    "id": 16018,
@@ -889,12 +1071,12 @@ window.BA_DATA = {
    "school": "Trinity",
    "club": "無し",
    "family": "河駒風",
-   "familyRuby": "こまかぜ",
-   "personal": "ラブ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "らぶ"
+   ],
+   "fullAnswers": [
     "こまかぜらぶ",
-    "らぶ",
     "河駒風らぶ"
    ]
   },
@@ -904,11 +1086,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "Cleaning&Clearing",
    "family": "美甘",
-   "familyRuby": "みかも",
-   "personal": "ネル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ねる",
+    "ねる"
+   ],
+   "fullAnswers": [
     "みかもねる",
     "美甘ねる"
    ]
@@ -919,12 +1101,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "Cleaning&Clearing",
    "family": "角楯",
-   "familyRuby": "かくだて",
-   "personal": "カリン",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "かりん"
+   ],
+   "fullAnswers": [
     "かくだてかりん",
-    "かりん",
     "角楯かりん"
    ]
   },
@@ -934,11 +1116,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "Cleaning&Clearing",
    "family": "一之瀬",
-   "familyRuby": "いちのせ",
-   "personal": "アスナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あすな",
+    "あすな"
+   ],
+   "fullAnswers": [
     "いちのせあすな",
     "一之瀬あすな"
    ]
@@ -949,12 +1131,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "Cleaning&Clearing",
    "family": "飛鳥馬",
-   "familyRuby": "あすま",
-   "personal": "トキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "とき"
+   ],
+   "fullAnswers": [
     "あすまとき",
-    "とき",
     "飛鳥馬とき"
    ]
   },
@@ -964,11 +1146,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "Cleaning&Clearing",
    "family": "室笠",
-   "familyRuby": "むろかさ",
-   "personal": "アカネ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あかね",
+    "あかね"
+   ],
+   "fullAnswers": [
     "むろかさあかね",
     "室笠あかね"
    ]
@@ -979,11 +1161,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "エンジニア部",
    "family": "白石",
-   "familyRuby": "しらいし",
-   "personal": "ウタハ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "うたは",
+    "うたは"
+   ],
+   "fullAnswers": [
     "しらいしうたは",
     "白石うたは"
    ]
@@ -994,11 +1176,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "エンジニア部",
    "family": "豊見",
-   "familyRuby": "とよみ",
-   "personal": "コトリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ことり",
+    "ことり"
+   ],
+   "fullAnswers": [
     "とよみことり",
     "豊見ことり"
    ]
@@ -1009,12 +1191,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "エンジニア部",
    "family": "猫塚",
-   "familyRuby": "ねこづか",
-   "personal": "ヒビキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひびき"
+   ],
+   "fullAnswers": [
     "ねこづかひびき",
-    "ひびき",
     "猫塚ひびき"
    ]
   },
@@ -1024,11 +1206,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ゲーム開発部",
    "family": "天童",
-   "familyRuby": "てんどう",
-   "personal": "アリス",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ありす",
+    "ありす"
+   ],
+   "fullAnswers": [
     "てんどうありす",
     "天童ありす"
    ]
@@ -1039,12 +1221,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ゲーム開発部",
    "family": "才羽",
-   "familyRuby": "さいば",
-   "personal": "ミドリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みどり"
+   ],
+   "fullAnswers": [
     "さいばみどり",
-    "みどり",
     "才羽みどり"
    ]
   },
@@ -1054,12 +1236,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ゲーム開発部",
    "family": "花岡",
-   "familyRuby": "はなおか",
-   "personal": "ユズ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ゆず"
+   ],
+   "fullAnswers": [
     "はなおかゆず",
-    "ゆず",
     "花岡ゆず"
    ]
   },
@@ -1069,12 +1251,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ゲーム開発部",
    "family": "才羽",
-   "familyRuby": "さいば",
-   "personal": "モモイ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ももい"
+   ],
+   "fullAnswers": [
     "さいばももい",
-    "ももい",
     "才羽ももい"
    ]
   },
@@ -1084,12 +1266,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "セミナー",
    "family": "生塩",
-   "familyRuby": "うしお",
-   "personal": "ノア",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "のあ"
+   ],
+   "fullAnswers": [
     "うしおのあ",
-    "のあ",
     "生塩のあ"
    ]
   },
@@ -1099,12 +1281,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "セミナー",
    "family": "早瀬",
-   "familyRuby": "はやせ",
-   "personal": "ユウカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ゆうか"
+   ],
+   "fullAnswers": [
     "はやせゆうか",
-    "ゆうか",
     "早瀬ゆうか"
    ]
   },
@@ -1114,12 +1296,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "セミナー",
    "family": "黒崎",
-   "familyRuby": "くろさき",
-   "personal": "コユキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "こゆき"
+   ],
+   "fullAnswers": [
     "くろさきこゆき",
-    "こゆき",
     "黒崎こゆき"
    ]
   },
@@ -1129,12 +1311,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "セミナー",
    "family": "調月",
-   "familyRuby": "つかつき",
-   "personal": "リオ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "りお"
+   ],
+   "fullAnswers": [
     "つかつきりお",
-    "りお",
     "調月りお"
    ]
   },
@@ -1144,12 +1326,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "トレーニング部",
    "family": "乙花",
-   "familyRuby": "おとはな",
-   "personal": "スミレ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "すみれ"
+   ],
+   "fullAnswers": [
     "おとはなすみれ",
-    "すみれ",
     "乙花すみれ"
    ]
   },
@@ -1159,12 +1341,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "トレーニング部",
    "family": "野正",
-   "familyRuby": "のまさ",
-   "personal": "レイ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "れい"
+   ],
+   "fullAnswers": [
     "のまされい",
-    "れい",
     "野正れい"
    ]
   },
@@ -1174,12 +1356,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ヴェリタス",
    "family": "小塗",
-   "familyRuby": "こぬり",
-   "personal": "マキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "まき"
+   ],
+   "fullAnswers": [
     "こぬりまき",
-    "まき",
     "小塗まき"
    ]
   },
@@ -1189,12 +1371,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ヴェリタス",
    "family": "音瀬",
-   "familyRuby": "おとせ",
-   "personal": "コタマ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "こたま"
+   ],
+   "fullAnswers": [
     "おとせこたま",
-    "こたま",
     "音瀬こたま"
    ]
   },
@@ -1204,12 +1386,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ヴェリタス",
    "family": "小鈎",
-   "familyRuby": "おまがり",
-   "personal": "ハレ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "はれ"
+   ],
+   "fullAnswers": [
     "おまがりはれ",
-    "はれ",
     "小鈎はれ"
    ]
   },
@@ -1219,12 +1401,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "ヴェリタス",
    "family": "各務",
-   "familyRuby": "かがみ",
-   "personal": "チヒロ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ちひろ"
+   ],
+   "fullAnswers": [
     "かがみちひろ",
-    "ちひろ",
     "各務ちひろ"
    ]
   },
@@ -1234,12 +1416,12 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "特異現象捜査部",
    "family": "和泉元",
-   "familyRuby": "いずみもと",
-   "personal": "エイミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "えいみ"
+   ],
+   "fullAnswers": [
     "いずみもとえいみ",
-    "えいみ",
     "和泉元えいみ"
    ]
   },
@@ -1249,12 +1431,11 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "特異現象捜査部",
    "family": "",
-   "familyRuby": "",
-   "personal": "ケイ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
     "けい"
-   ]
+   ],
+   "fullAnswers": []
   },
   {
    "id": 20020,
@@ -1262,13 +1443,45 @@ window.BA_DATA = {
    "school": "Millennium",
    "club": "特異現象捜査部",
    "family": "明星",
-   "familyRuby": "あけぼし",
-   "personal": "ヒマリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひまり"
+   ],
+   "fullAnswers": [
     "あけぼしひまり",
-    "ひまり",
     "明星ひまり"
+   ]
+  },
+  {
+   "id": 900014,
+   "name": "ツバサ",
+   "school": "Millennium",
+   "club": "モー超常現象研究所",
+   "family": "羽咋",
+   "npc": true,
+   "answers": [
+    "つばさ"
+   ],
+   "fullAnswers": [
+    "はくいつばさ",
+    "はねもとつばさ",
+    "羽咋つばさ"
+   ]
+  },
+  {
+   "id": 900013,
+   "name": "ミライ",
+   "school": "Millennium",
+   "club": "疑似科学部",
+   "family": "吾妻",
+   "npc": true,
+   "answers": [
+    "みらい"
+   ],
+   "fullAnswers": [
+    "あずまみらい",
+    "あづまみらい",
+    "吾妻みらい"
    ]
   },
   {
@@ -1277,11 +1490,11 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "お祭り運営委員会",
    "family": "里浜",
-   "familyRuby": "さとはま",
-   "personal": "ウミカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "うみか",
+    "うみか"
+   ],
+   "fullAnswers": [
     "さとはまうみか",
     "里浜うみか"
    ]
@@ -1292,12 +1505,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "お祭り運営委員会",
    "family": "朝比奈",
-   "familyRuby": "あさひな",
-   "personal": "フィーナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ふぃーな"
+   ],
+   "fullAnswers": [
     "あさひなふぃーな",
-    "ふぃーな",
     "朝比奈ふぃーな"
    ]
   },
@@ -1307,12 +1520,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "お祭り運営委員会",
    "family": "河和",
-   "familyRuby": "かわわ",
-   "personal": "シズコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "しずこ"
+   ],
+   "fullAnswers": [
     "かわわしずこ",
-    "しずこ",
     "河和しずこ"
    ]
   },
@@ -1322,12 +1535,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "修行部",
    "family": "水羽",
-   "familyRuby": "みずは",
-   "personal": "ミモリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みもり"
+   ],
+   "fullAnswers": [
     "みずはみもり",
-    "みもり",
     "水羽みもり"
    ]
   },
@@ -1337,12 +1550,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "修行部",
    "family": "春日",
-   "familyRuby": "かすが",
-   "personal": "ツバキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "つばき"
+   ],
+   "fullAnswers": [
     "かすがつばき",
-    "つばき",
     "春日つばき"
    ]
   },
@@ -1352,12 +1565,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "修行部",
    "family": "勇美",
-   "familyRuby": "いさみ",
-   "personal": "カエデ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "かえで"
+   ],
+   "fullAnswers": [
     "いさみかえで",
-    "かえで",
     "勇美かえで"
    ]
   },
@@ -1367,11 +1580,11 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "忍術研究部",
    "family": "久田",
-   "familyRuby": "くだ",
-   "personal": "イズナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "いずな",
+    "いずな"
+   ],
+   "fullAnswers": [
     "くだいずな",
     "久田いずな"
    ]
@@ -1382,12 +1595,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "忍術研究部",
    "family": "大野",
-   "familyRuby": "おおの",
-   "personal": "ツクヨ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "つくよ"
+   ],
+   "fullAnswers": [
     "おおのつくよ",
-    "つくよ",
     "大野つくよ"
    ]
   },
@@ -1397,12 +1610,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "忍術研究部",
    "family": "千鳥",
-   "familyRuby": "ちどり",
-   "personal": "ミチル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みちる"
+   ],
+   "fullAnswers": [
     "ちどりみちる",
-    "みちる",
     "千鳥みちる"
    ]
   },
@@ -1412,12 +1625,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "百花繚乱紛争調停委員会",
    "family": "勘解由小路",
-   "familyRuby": "かでのこうじ",
-   "personal": "ユカリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ゆかり"
+   ],
+   "fullAnswers": [
     "かでのこうじゆかり",
-    "ゆかり",
     "勘解由小路ゆかり"
    ]
   },
@@ -1427,12 +1640,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "百花繚乱紛争調停委員会",
    "family": "不破",
-   "familyRuby": "ふわ",
-   "personal": "レンゲ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "れんげ"
+   ],
+   "fullAnswers": [
     "ふわれんげ",
-    "れんげ",
     "不破れんげ"
    ]
   },
@@ -1442,11 +1655,11 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "百花繚乱紛争調停委員会",
    "family": "桐生",
-   "familyRuby": "きりゅう",
-   "personal": "キキョウ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ききょう",
+    "ききょう"
+   ],
+   "fullAnswers": [
     "きりゅうききょう",
     "桐生ききょう"
    ]
@@ -1457,12 +1670,12 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "百花繚乱紛争調停委員会",
    "family": "御稜",
-   "familyRuby": "ごりょう",
-   "personal": "ナグサ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "なぐさ"
+   ],
+   "fullAnswers": [
     "ごりょうなぐさ",
-    "なぐさ",
     "御稜なぐさ"
    ]
   },
@@ -1472,11 +1685,11 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "陰陽部",
    "family": "和楽",
-   "familyRuby": "わらく",
-   "personal": "チセ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ちせ",
+    "ちせ"
+   ],
+   "fullAnswers": [
     "わらくちせ",
     "和楽ちせ"
    ]
@@ -1487,11 +1700,11 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "陰陽部",
    "family": "桑上",
-   "familyRuby": "くわかみ",
-   "personal": "カホ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "かほ",
+    "かほ"
+   ],
+   "fullAnswers": [
     "くわかみかほ",
     "桑上かほ"
    ]
@@ -1502,14 +1715,53 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "陰陽部",
    "family": "天地",
-   "familyRuby": "あまち",
-   "personal": "ニヤ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "にや"
+   ],
+   "fullAnswers": [
     "あまちにや",
-    "にや",
     "天地にや"
    ]
+  },
+  {
+   "id": 900016,
+   "name": "ナツキ",
+   "school": "Hyakkiyako",
+   "club": "人力車部",
+   "family": "浅草",
+   "npc": true,
+   "answers": [
+    "なつき"
+   ],
+   "fullAnswers": [
+    "あさくさなつき",
+    "浅草なつき"
+   ]
+  },
+  {
+   "id": 900019,
+   "name": "ミクリ",
+   "school": "Hyakkiyako",
+   "club": "修行部（体験入部）",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "みくり"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900021,
+   "name": "クズノハ",
+   "school": "Hyakkiyako",
+   "club": "所属不明",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "くずのは"
+   ],
+   "fullAnswers": []
   },
   {
    "id": 10033,
@@ -1517,14 +1769,68 @@ window.BA_DATA = {
    "school": "Hyakkiyako",
    "club": "無し",
    "family": "狐坂",
-   "familyRuby": "こさか",
-   "personal": "ワカモ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "わかも"
+   ],
+   "fullAnswers": [
     "こさかわかも",
-    "わかも",
     "狐坂わかも"
    ]
+  },
+  {
+   "id": 900015,
+   "name": "アヤメ",
+   "school": "Hyakkiyako",
+   "club": "百花繚乱紛争調停委員会",
+   "family": "七稜",
+   "npc": true,
+   "answers": [
+    "あやめ"
+   ],
+   "fullAnswers": [
+    "ななかどあやめ",
+    "七稜あやめ"
+   ]
+  },
+  {
+   "id": 900017,
+   "name": "シュロ",
+   "school": "Hyakkiyako",
+   "club": "花鳥風月部",
+   "family": "箭吹",
+   "npc": true,
+   "answers": [
+    "しゅろ"
+   ],
+   "fullAnswers": [
+    "やぶきしゅろ",
+    "箭吹しゅろ"
+   ]
+  },
+  {
+   "id": 900018,
+   "name": "コクリコ",
+   "school": "Hyakkiyako",
+   "club": "花鳥風月部",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "こくりこ"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900020,
+   "name": "アラタ",
+   "school": "Hyakkiyako",
+   "club": "魑魅一座",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "あらた"
+   ],
+   "fullAnswers": []
   },
   {
    "id": 10011,
@@ -1532,11 +1838,11 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "梅花園",
    "family": "春原",
-   "familyRuby": "すのはら",
-   "personal": "シュン",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "しゅん",
+    "しゅん"
+   ],
+   "fullAnswers": [
     "すのはらしゅん",
     "春原しゅん"
    ]
@@ -1547,11 +1853,11 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "梅花園",
    "family": "春原",
-   "familyRuby": "すのはら",
-   "personal": "ココナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ここな",
+    "ここな"
+   ],
+   "fullAnswers": [
     "すのはらここな",
     "春原ここな"
    ]
@@ -1562,12 +1868,12 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "玄武商会",
    "family": "朱城",
-   "familyRuby": "あけしろ",
-   "personal": "ルミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "るみ"
+   ],
+   "fullAnswers": [
     "あけしろるみ",
-    "るみ",
     "朱城るみ"
    ]
   },
@@ -1577,12 +1883,12 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "玄武商会",
    "family": "鹿山",
-   "familyRuby": "かやま",
-   "personal": "レイジョ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "れいじょ"
+   ],
+   "fullAnswers": [
     "かやまれいじょ",
-    "れいじょ",
     "鹿山れいじょ"
    ]
   },
@@ -1592,12 +1898,12 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "玄龍門",
    "family": "近衛",
-   "familyRuby": "このえ",
-   "personal": "ミナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みな"
+   ],
+   "fullAnswers": [
     "このえみな",
-    "みな",
     "近衛みな"
    ]
   },
@@ -1607,11 +1913,11 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "玄龍門",
    "family": "竜華",
-   "familyRuby": "りゅうげ",
-   "personal": "キサキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "きさき",
+    "きさき"
+   ],
+   "fullAnswers": [
     "りゅうげきさき",
     "竜華きさき"
    ]
@@ -1622,13 +1928,43 @@ window.BA_DATA = {
    "school": "Shanhaijing",
    "club": "錬丹術研究会",
    "family": "薬子",
-   "familyRuby": "やくし",
-   "personal": "サヤ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "さや",
+    "さや"
+   ],
+   "fullAnswers": [
     "やくしさや",
     "薬子さや"
+   ]
+  },
+  {
+   "id": 900023,
+   "name": "カグヤ",
+   "school": "Shanhaijing",
+   "club": "京劇部",
+   "family": "漆原",
+   "npc": true,
+   "answers": [
+    "かぐや"
+   ],
+   "fullAnswers": [
+    "うるしばらかぐや",
+    "漆原かぐや"
+   ]
+  },
+  {
+   "id": 900022,
+   "name": "カナエ",
+   "school": "Shanhaijing",
+   "club": "玄龍門",
+   "family": "宮内",
+   "npc": true,
+   "answers": [
+    "かなえ"
+   ],
+   "fullAnswers": [
+    "みやうちかなえ",
+    "宮内かなえ"
    ]
   },
   {
@@ -1637,11 +1973,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "183号特別クラス",
    "family": "仁木",
-   "familyRuby": "にき",
-   "personal": "アンナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あんな",
+    "あんな"
+   ],
+   "fullAnswers": [
     "にきあんな",
     "仁木あんな"
    ]
@@ -1652,11 +1988,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "183号特別クラス",
    "family": "二木",
-   "familyRuby": "にき",
-   "personal": "エリナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "えりな",
+    "えりな"
+   ],
+   "fullAnswers": [
     "にきえりな",
     "二木えりな"
    ]
@@ -1667,12 +2003,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "183号特別クラス",
    "family": "古畑",
-   "familyRuby": "ふるはた",
-   "personal": "ラナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "らな"
+   ],
+   "fullAnswers": [
     "ふるはたらな",
-    "らな",
     "古畑らな"
    ]
   },
@@ -1682,11 +2018,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "227号特別クラス",
    "family": "間宵",
-   "familyRuby": "まよい",
-   "personal": "シグレ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "しぐれ",
+    "しぐれ"
+   ],
+   "fullAnswers": [
     "まよいしぐれ",
     "間宵しぐれ"
    ]
@@ -1697,12 +2033,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "227号特別クラス",
    "family": "天見",
-   "familyRuby": "あまみ",
-   "personal": "ノドカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "のどか"
+   ],
+   "fullAnswers": [
     "あまみのどか",
-    "のどか",
     "天見のどか"
    ]
   },
@@ -1712,11 +2048,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "レッドウィンター事務局",
    "family": "連河",
-   "familyRuby": "れんかわ",
-   "personal": "チェリノ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ちぇりの",
+    "ちぇりの"
+   ],
+   "fullAnswers": [
     "れんかわちぇりの",
     "連河ちぇりの"
    ]
@@ -1727,12 +2063,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "レッドウィンター事務局",
    "family": "池倉",
-   "familyRuby": "いけくら",
-   "personal": "マリナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "まりな"
+   ],
+   "fullAnswers": [
     "いけくらまりな",
-    "まりな",
     "池倉まりな"
    ]
   },
@@ -1742,12 +2078,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "レッドウィンター事務局",
    "family": "佐城",
-   "familyRuby": "さしろ",
-   "personal": "トモエ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ともえ"
+   ],
+   "fullAnswers": [
     "さしろともえ",
-    "ともえ",
     "佐城ともえ"
    ]
   },
@@ -1757,11 +2093,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "出版部",
    "family": "三善",
-   "familyRuby": "みよし",
-   "personal": "タカネ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "たかね",
+    "たかね"
+   ],
+   "fullAnswers": [
     "みよしたかね",
     "三善たかね"
    ]
@@ -1772,12 +2108,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "出版部",
    "family": "荒槇",
-   "familyRuby": "あらまき",
-   "personal": "ヤクモ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "やくも"
+   ],
+   "fullAnswers": [
     "あらまきやくも",
-    "やくも",
     "荒槇やくも"
    ]
   },
@@ -1787,11 +2123,11 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "工務部",
    "family": "安守",
-   "familyRuby": "やすもり",
-   "personal": "ミノリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "みのり",
+    "みのり"
+   ],
+   "fullAnswers": [
     "やすもりみのり",
     "安守みのり"
    ]
@@ -1802,12 +2138,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "知識解放戦線",
    "family": "姫木",
-   "familyRuby": "ひめき",
-   "personal": "メル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "める"
+   ],
+   "fullAnswers": [
     "ひめきめる",
-    "める",
     "姫木める"
    ]
   },
@@ -1817,12 +2153,12 @@ window.BA_DATA = {
    "school": "RedWinter",
    "club": "知識解放戦線",
    "family": "秋泉",
-   "familyRuby": "あきいずみ",
-   "personal": "モミジ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "もみじ"
+   ],
+   "fullAnswers": [
     "あきいずみもみじ",
-    "もみじ",
     "秋泉もみじ"
    ]
   },
@@ -1832,12 +2168,12 @@ window.BA_DATA = {
    "school": "Valkyrie",
    "club": "公安局",
    "family": "尾刃",
-   "familyRuby": "おがた",
-   "personal": "カンナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "かんな"
+   ],
+   "fullAnswers": [
     "おがたかんな",
-    "かんな",
     "尾刃かんな"
    ]
   },
@@ -1847,11 +2183,11 @@ window.BA_DATA = {
    "school": "Valkyrie",
    "club": "公安局",
    "family": "志真",
-   "familyRuby": "しま",
-   "personal": "コノカ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "このか",
+    "このか"
+   ],
+   "fullAnswers": [
     "しまこのか",
     "志真このか"
    ]
@@ -1862,11 +2198,11 @@ window.BA_DATA = {
    "school": "Valkyrie",
    "club": "生活安全局",
    "family": "中務",
-   "familyRuby": "なかつかさ",
-   "personal": "キリノ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "きりの",
+    "きりの"
+   ],
+   "fullAnswers": [
     "なかつかさきりの",
     "中務きりの"
    ]
@@ -1877,13 +2213,28 @@ window.BA_DATA = {
    "school": "Valkyrie",
    "club": "生活安全局",
    "family": "合歓垣",
-   "familyRuby": "ねむがき",
-   "personal": "フブキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ふぶき"
+   ],
+   "fullAnswers": [
     "ねむがきふぶき",
-    "ふぶき",
     "合歓垣ふぶき"
+   ]
+  },
+  {
+   "id": 900024,
+   "name": "ミスズ",
+   "school": "Valkyrie",
+   "club": "矯正局",
+   "family": "監原",
+   "npc": true,
+   "answers": [
+    "みすず"
+   ],
+   "fullAnswers": [
+    "かんばらみすず",
+    "監原みすず"
    ]
   },
   {
@@ -1892,11 +2243,11 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "FOX小隊",
    "family": "吉野",
-   "familyRuby": "よしの",
-   "personal": "ニコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "にこ",
+    "にこ"
+   ],
+   "fullAnswers": [
     "よしのにこ",
     "吉野にこ"
    ]
@@ -1907,11 +2258,11 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "FOX小隊",
    "family": "高倉",
-   "familyRuby": "たかくら",
-   "personal": "クルミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "くるみ",
+    "くるみ"
+   ],
+   "fullAnswers": [
     "たかくらくるみ",
     "高倉くるみ"
    ]
@@ -1922,11 +2273,11 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "FOX小隊",
    "family": "天神山",
-   "familyRuby": "てんじんやま",
-   "personal": "オトギ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "おとぎ",
+    "おとぎ"
+   ],
+   "fullAnswers": [
     "てんじんやまおとぎ",
     "天神山おとぎ"
    ]
@@ -1937,12 +2288,12 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "RABBIT小隊",
    "family": "月雪",
-   "familyRuby": "つきゆき",
-   "personal": "ミヤコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みやこ"
+   ],
+   "fullAnswers": [
     "つきゆきみやこ",
-    "みやこ",
     "月雪みやこ"
    ]
   },
@@ -1952,12 +2303,12 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "RABBIT小隊",
    "family": "霞沢",
-   "familyRuby": "かすみざわ",
-   "personal": "ミユ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みゆ"
+   ],
+   "fullAnswers": [
     "かすみざわみゆ",
-    "みゆ",
     "霞沢みゆ"
    ]
   },
@@ -1967,11 +2318,11 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "RABBIT小隊",
    "family": "空井",
-   "familyRuby": "そらい",
-   "personal": "サキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "さき",
+    "さき"
+   ],
+   "fullAnswers": [
     "そらいさき",
     "空井さき"
    ]
@@ -1982,13 +2333,29 @@ window.BA_DATA = {
    "school": "SRT",
    "club": "RABBIT小隊",
    "family": "風倉",
-   "familyRuby": "かぜくら",
-   "personal": "モエ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "もえ"
+   ],
+   "fullAnswers": [
     "かぜくらもえ",
-    "もえ",
     "風倉もえ"
+   ]
+  },
+  {
+   "id": 900025,
+   "name": "ユキノ",
+   "school": "SRT",
+   "club": "FOX小隊",
+   "family": "七度",
+   "npc": true,
+   "answers": [
+    "ゆきの"
+   ],
+   "fullAnswers": [
+    "しちどゆきの",
+    "ななたびゆきの",
+    "七度ゆきの"
    ]
   },
   {
@@ -1997,12 +2364,12 @@ window.BA_DATA = {
    "school": "Arius",
    "club": "アリウススクワッド",
    "family": "戒野",
-   "familyRuby": "いましの",
-   "personal": "ミサキ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みさき"
+   ],
+   "fullAnswers": [
     "いましのみさき",
-    "みさき",
     "戒野みさき"
    ]
   },
@@ -2012,11 +2379,11 @@ window.BA_DATA = {
    "school": "Arius",
    "club": "アリウススクワッド",
    "family": "秤",
-   "familyRuby": "はかり",
-   "personal": "アツコ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あつこ",
+    "あつこ"
+   ],
+   "fullAnswers": [
     "はかりあつこ",
     "秤あつこ"
    ]
@@ -2027,11 +2394,11 @@ window.BA_DATA = {
    "school": "Arius",
    "club": "アリウススクワッド",
    "family": "錠前",
-   "familyRuby": "じょうまえ",
-   "personal": "サオリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "さおり",
+    "さおり"
+   ],
+   "fullAnswers": [
     "じょうまえさおり",
     "錠前さおり"
    ]
@@ -2042,12 +2409,12 @@ window.BA_DATA = {
    "school": "Arius",
    "club": "アリウススクワッド",
    "family": "槌永",
-   "familyRuby": "つちなが",
-   "personal": "ヒヨリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひより"
+   ],
+   "fullAnswers": [
     "つちながひより",
-    "ひより",
     "槌永ひより"
    ]
   },
@@ -2057,13 +2424,28 @@ window.BA_DATA = {
    "school": "Arius",
    "club": "ニコメディアトゥループ",
    "family": "梯",
-   "familyRuby": "かけはし",
-   "personal": "スバル",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "すばる"
+   ],
+   "fullAnswers": [
     "かけはしすばる",
-    "すばる",
     "梯すばる"
+   ]
+  },
+  {
+   "id": 900026,
+   "name": "マイア",
+   "school": "Arius",
+   "club": "ニコメディアトゥループ",
+   "family": "立木",
+   "npc": true,
+   "answers": [
+    "まいあ"
+   ],
+   "fullAnswers": [
+    "たちぎまいあ",
+    "立木まいあ"
    ]
   },
   {
@@ -2072,12 +2454,12 @@ window.BA_DATA = {
    "school": "Highlander",
    "club": "CCC",
    "family": "橘",
-   "familyRuby": "たちばな",
-   "personal": "ヒカリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "ひかり"
+   ],
+   "fullAnswers": [
     "たちばなひかり",
-    "ひかり",
     "橘ひかり"
    ]
   },
@@ -2087,12 +2469,12 @@ window.BA_DATA = {
    "school": "Highlander",
    "club": "CCC",
    "family": "橘",
-   "familyRuby": "たちばな",
-   "personal": "ノゾミ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "のぞみ"
+   ],
+   "fullAnswers": [
     "たちばなのぞみ",
-    "のぞみ",
     "橘のぞみ"
    ]
   },
@@ -2102,13 +2484,28 @@ window.BA_DATA = {
    "school": "Highlander",
    "club": "貨物輸送管理部",
    "family": "内海",
-   "familyRuby": "うつみ",
-   "personal": "アオバ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "あおば",
+    "あおば"
+   ],
+   "fullAnswers": [
     "うつみあおば",
     "内海あおば"
+   ]
+  },
+  {
+   "id": 900027,
+   "name": "スオウ",
+   "school": "Highlander",
+   "club": "ハイランダー監理室",
+   "family": "朝霧",
+   "npc": true,
+   "answers": [
+    "すおう"
+   ],
+   "fullAnswers": [
+    "あさぎりすおう",
+    "朝霧すおう"
    ]
   },
   {
@@ -2117,11 +2514,11 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "オカルト研究会（第4寮404号室）",
    "family": "白尾",
-   "familyRuby": "しらお",
-   "personal": "エリ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "えり",
+    "えり"
+   ],
+   "fullAnswers": [
     "しらおえり",
     "白尾えり"
    ]
@@ -2132,12 +2529,12 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "オカルト研究会（第4寮404号室）",
    "family": "板垣",
-   "familyRuby": "いたがき",
-   "personal": "カノエ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "かのえ"
+   ],
+   "fullAnswers": [
     "いたがきかのえ",
-    "かのえ",
     "板垣かのえ"
    ]
   },
@@ -2147,12 +2544,12 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "オカルト研究会（第4寮404号室）",
    "family": "衣斐",
-   "familyRuby": "きぬい",
-   "personal": "レナ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "れな"
+   ],
+   "fullAnswers": [
     "きぬいれな",
-    "れな",
     "衣斐れな"
    ]
   },
@@ -2162,12 +2559,12 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "オカルト研究会（第4寮404号室）",
    "family": "椎名",
-   "familyRuby": "しいな",
-   "personal": "ツムギ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "つむぎ"
+   ],
+   "fullAnswers": [
     "しいなつむぎ",
-    "つむぎ",
     "椎名つむぎ"
    ]
   },
@@ -2177,12 +2574,12 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "特殊交易部（第5寮402号室）",
    "family": "桜井",
-   "familyRuby": "さくらい",
-   "personal": "ミヨ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "みよ"
+   ],
+   "fullAnswers": [
     "さくらいみよ",
-    "みよ",
     "桜井みよ"
    ]
   },
@@ -2192,11 +2589,11 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "特殊交易部（第5寮402号室）",
    "family": "若狭",
-   "familyRuby": "わかさ",
-   "personal": "フユ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ふゆ",
+    "ふゆ"
+   ],
+   "fullAnswers": [
     "わかさふゆ",
     "若狭ふゆ"
    ]
@@ -2207,13 +2604,52 @@ window.BA_DATA = {
    "school": "WildHunt",
    "club": "特殊交易部（第5寮402号室）",
    "family": "薄葉",
-   "familyRuby": "うすば",
-   "personal": "リツ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
+    "りつ"
+   ],
+   "fullAnswers": [
     "うすばりつ",
-    "りつ",
     "薄葉りつ"
+   ]
+  },
+  {
+   "id": 900029,
+   "name": "ミリア",
+   "school": "WildHunt",
+   "club": "寮監隊",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "みりあ"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900030,
+   "name": "ヒロミ",
+   "school": "WildHunt",
+   "club": "寮監隊",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "ひろみ"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900028,
+   "name": "マナミ",
+   "school": "WildHunt",
+   "club": "芸術評議会",
+   "family": "雲類鷲",
+   "npc": true,
+   "answers": [
+    "まなみ"
+   ],
+   "fullAnswers": [
+    "うるわしまなみ",
+    "雲類鷲まなみ"
    ]
   },
   {
@@ -2222,11 +2658,11 @@ window.BA_DATA = {
    "school": "Odyssey",
    "club": "ダイビング部",
    "family": "渡海",
-   "familyRuby": "とうみ",
-   "personal": "ココロ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "こころ",
+    "こころ"
+   ],
+   "fullAnswers": [
     "とうみこころ",
     "渡海こころ"
    ]
@@ -2237,75 +2673,317 @@ window.BA_DATA = {
    "school": "Odyssey",
    "club": "ダイビング部",
    "family": "淵上",
-   "familyRuby": "ふちがみ",
-   "personal": "コトネ",
-   "personalRuby": "",
+   "npc": false,
    "answers": [
-    "ことね",
+    "ことね"
+   ],
+   "fullAnswers": [
     "ふちがみことね",
     "淵上ことね"
    ]
   },
   {
-   "id": 10079,
-   "name": "御坂美琴",
-   "school": "Collab",
-   "club": "無し",
-   "family": "御坂",
-   "familyRuby": "みさか",
-   "personal": "美琴",
-   "personalRuby": "みこと",
+   "id": 900031,
+   "name": "ミナト",
+   "school": "Odyssey",
+   "club": "アイランド",
+   "family": "海路",
+   "npc": true,
    "answers": [
-    "みこと",
-    "みさかみこと",
-    "御坂美琴",
-    "美琴"
+    "みなと"
+   ],
+   "fullAnswers": [
+    "うみじみなと",
+    "海路みなと"
    ]
   },
   {
-   "id": 10080,
-   "name": "食蜂操祈",
-   "school": "Collab",
-   "club": "無し",
-   "family": "食蜂",
-   "familyRuby": "しょくほう",
-   "personal": "操祈",
-   "personalRuby": "みさき",
+   "id": 900032,
+   "name": "アミ",
+   "school": "Odyssey",
+   "club": "アイランド",
+   "family": "灯下",
+   "npc": true,
    "answers": [
-    "しょくほうみさき",
-    "操祈",
-    "食蜂操祈"
+    "あみ"
+   ],
+   "fullAnswers": [
+    "ともしたあみ",
+    "灯下あみ"
    ]
   },
   {
-   "id": 20007,
-   "name": "初音ミク",
-   "school": "Collab",
-   "club": "無し",
-   "family": "初音",
-   "familyRuby": "はつね",
-   "personal": "ミク",
-   "personalRuby": "",
+   "id": 900035,
+   "name": "ミツキ",
+   "school": "Odyssey",
+   "club": "クルーズ運営部",
+   "family": "千石",
+   "npc": true,
    "answers": [
-    "はつねみく",
-    "みく",
-    "初音みく"
+    "みつき"
+   ],
+   "fullAnswers": [
+    "せんごくみつき",
+    "千石みつき"
    ]
   },
   {
-   "id": 26011,
-   "name": "佐天涙子",
-   "school": "Collab",
-   "club": "無し",
-   "family": "佐天",
-   "familyRuby": "さてん",
-   "personal": "涙子",
-   "personalRuby": "るいこ",
+   "id": 900037,
+   "name": "マキナ",
+   "school": "Odyssey",
+   "club": "ダイビング部",
+   "family": "",
+   "npc": true,
    "answers": [
-    "さてんるいこ",
-    "るいこ",
-    "佐天涙子",
-    "涙子"
+    "まきな"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900038,
+   "name": "サユリ",
+   "school": "Odyssey",
+   "club": "ダイビング部",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "さゆり"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900033,
+   "name": "トオル",
+   "school": "Odyssey",
+   "club": "トライデント",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "とおる"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900034,
+   "name": "スミカ",
+   "school": "Odyssey",
+   "club": "トライデント",
+   "family": "小森",
+   "npc": true,
+   "answers": [
+    "すみか"
+   ],
+   "fullAnswers": [
+    "こもりすみか",
+    "小森すみか"
+   ]
+  },
+  {
+   "id": 900036,
+   "name": "サナエ",
+   "school": "Odyssey",
+   "club": "医務室",
+   "family": "船守",
+   "npc": true,
+   "answers": [
+    "さなえ"
+   ],
+   "fullAnswers": [
+    "ふなもりさなえ",
+    "船守さなえ"
+   ]
+  },
+  {
+   "id": 900039,
+   "name": "シノン",
+   "school": "Chronos",
+   "club": "クロノス報道部",
+   "family": "川流",
+   "npc": true,
+   "answers": [
+    "しのん"
+   ],
+   "fullAnswers": [
+    "かわるしのん",
+    "川流しのん"
+   ]
+  },
+  {
+   "id": 900040,
+   "name": "マイ",
+   "school": "Chronos",
+   "club": "クロノス報道部",
+   "family": "風巻",
+   "npc": true,
+   "answers": [
+    "まい"
+   ],
+   "fullAnswers": [
+    "かざまきまい",
+    "しまきまい",
+    "風巻まい"
+   ]
+  },
+  {
+   "id": 900050,
+   "name": "アザミ",
+   "school": "Other",
+   "club": "エビス分校 自治委員会",
+   "family": "土生",
+   "npc": true,
+   "answers": [
+    "あざみ"
+   ],
+   "fullAnswers": [
+    "はぶあざみ",
+    "土生あざみ"
+   ]
+  },
+  {
+   "id": 900051,
+   "name": "ソラ",
+   "school": "Other",
+   "club": "エンジェル24",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "そら"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900041,
+   "name": "アキラ",
+   "school": "Other",
+   "club": "七囚人",
+   "family": "清澄",
+   "npc": true,
+   "answers": [
+    "あきら"
+   ],
+   "fullAnswers": [
+    "きよすみあきら",
+    "清澄あきら"
+   ]
+  },
+  {
+   "id": 900042,
+   "name": "カイ",
+   "school": "Other",
+   "club": "七囚人",
+   "family": "申谷",
+   "npc": true,
+   "answers": [
+    "かい"
+   ],
+   "fullAnswers": [
+    "しんたにかい",
+    "申谷かい"
+   ]
+  },
+  {
+   "id": 900043,
+   "name": "アケミ",
+   "school": "Other",
+   "club": "七囚人",
+   "family": "栗浜",
+   "npc": true,
+   "answers": [
+    "あけみ"
+   ],
+   "fullAnswers": [
+    "くりはまあけみ",
+    "栗浜あけみ"
+   ]
+  },
+  {
+   "id": 900049,
+   "name": "アン",
+   "school": "Other",
+   "club": "不動産管理仲介部",
+   "family": "不動",
+   "npc": true,
+   "answers": [
+    "あん"
+   ],
+   "fullAnswers": [
+    "ふどうあん",
+    "不動あん"
+   ]
+  },
+  {
+   "id": 900044,
+   "name": "スイコ",
+   "school": "Other",
+   "club": "所属不明",
+   "family": "鷹野主",
+   "npc": true,
+   "answers": [
+    "すいこ"
+   ],
+   "fullAnswers": [
+    "たかのすすいこ",
+    "鷹野主すいこ"
+   ]
+  },
+  {
+   "id": 900045,
+   "name": "ナゴミ",
+   "school": "Other",
+   "club": "所属不明",
+   "family": "五百雀",
+   "npc": true,
+   "answers": [
+    "なごみ"
+   ],
+   "fullAnswers": [
+    "いおじゃくなごみ",
+    "五百雀なごみ"
+   ]
+  },
+  {
+   "id": 900046,
+   "name": "ヨウコ",
+   "school": "Other",
+   "club": "所属不明",
+   "family": "烏頭尾",
+   "npc": true,
+   "answers": [
+    "ようこ"
+   ],
+   "fullAnswers": [
+    "うとうようこ",
+    "烏頭尾ようこ"
+   ]
+  },
+  {
+   "id": 900047,
+   "name": "キョウコ",
+   "school": "Other",
+   "club": "所属不明",
+   "family": "密井",
+   "npc": true,
+   "answers": [
+    "きょうこ"
+   ],
+   "fullAnswers": [
+    "みついきょうこ",
+    "密井きょうこ"
+   ]
+  },
+  {
+   "id": 900048,
+   "name": "ナナミ",
+   "school": "Other",
+   "club": "所属不明",
+   "family": "護守",
+   "npc": true,
+   "answers": [
+    "ななみ"
+   ],
+   "fullAnswers": [
+    "ごのかみななみ",
+    "護守ななみ"
    ]
   }
  ]

@@ -1,0 +1,75 @@
+{
+  "_comment": "未実装（NPC）の生徒。むずかしいモードで出題。familyRuby は読みの候補（複数可）。実装済みになった生徒は build_students.py が自動で除外する。出典: ニコニコ大百科「ブルーアーカイブのキャラクター一覧」、Gamerch ブルアカ攻略Wiki",
+  "schools": [
+    {"key": "GSC", "name": "連邦生徒会", "long": "連邦生徒会", "before": "Abydos"},
+    {"key": "Chronos", "name": "クロノス", "long": "クロノススクール", "before": null},
+    {"key": "Other", "name": "その他", "long": "その他（七囚人など）", "before": null}
+  ],
+  "students": [
+    {"name": "リン", "family": "七神", "familyRuby": ["なながみ"], "school": "GSC", "club": "統括室"},
+    {"name": "モモカ", "family": "由良木", "familyRuby": ["ゆらぎ"], "school": "GSC", "club": "交通室"},
+    {"name": "アユム", "family": "岩櫃", "familyRuby": ["いわびつ"], "school": "GSC", "club": "調停室"},
+    {"name": "カヤ", "family": "不知火", "familyRuby": ["しらぬい"], "school": "GSC", "club": "防衛室"},
+    {"name": "アオイ", "family": "扇喜", "familyRuby": ["おうぎ", "おき"], "school": "GSC", "club": "財務室"},
+    {"name": "ハイネ", "family": "", "familyRuby": [], "school": "GSC", "club": "体育室"},
+    {"name": "スモモ", "family": "", "familyRuby": [], "school": "GSC", "club": "所属不明"},
+
+    {"name": "ユメ", "family": "梔子", "familyRuby": ["くちなし"], "school": "Abydos", "club": "アビドス生徒会"},
+
+    {"name": "マユミ", "family": "降旗", "familyRuby": ["ふりはた"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
+    {"name": "カレン", "family": "明楽", "familyRuby": ["みょうらく"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
+    {"name": "ショウコ", "family": "五十嵐", "familyRuby": ["いがらし"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
+
+    {"name": "チエル", "family": "", "familyRuby": [], "school": "Trinity", "club": "図書委員会"},
+
+    {"name": "ミライ", "family": "吾妻", "familyRuby": ["あづま", "あずま"], "school": "Millennium", "club": "疑似科学部"},
+    {"name": "ツバサ", "family": "羽咋", "familyRuby": ["はねもと", "はくい"], "school": "Millennium", "club": "モー超常現象研究所"},
+
+    {"name": "アヤメ", "family": "七稜", "familyRuby": ["ななかど"], "school": "Hyakkiyako", "club": "百花繚乱紛争調停委員会"},
+    {"name": "ナツキ", "family": "浅草", "familyRuby": ["あさくさ"], "school": "Hyakkiyako", "club": "人力車部"},
+    {"name": "シュロ", "family": "箭吹", "familyRuby": ["やぶき"], "school": "Hyakkiyako", "club": "花鳥風月部"},
+    {"name": "コクリコ", "family": "", "familyRuby": [], "school": "Hyakkiyako", "club": "花鳥風月部"},
+    {"name": "ミクリ", "family": "", "familyRuby": [], "school": "Hyakkiyako", "club": "修行部（体験入部）"},
+    {"name": "アラタ", "family": "", "familyRuby": [], "school": "Hyakkiyako", "club": "魑魅一座"},
+    {"name": "クズノハ", "family": "", "familyRuby": [], "school": "Hyakkiyako", "club": "所属不明"},
+
+    {"name": "カナエ", "family": "宮内", "familyRuby": ["みやうち"], "school": "Shanhaijing", "club": "玄龍門"},
+    {"name": "カグヤ", "family": "漆原", "familyRuby": ["うるしばら"], "school": "Shanhaijing", "club": "京劇部"},
+
+    {"name": "ミスズ", "family": "監原", "familyRuby": ["かんばら"], "school": "Valkyrie", "club": "矯正局"},
+
+    {"name": "ユキノ", "family": "七度", "familyRuby": ["しちど", "ななたび"], "school": "SRT", "club": "FOX小隊"},
+
+    {"name": "マイア", "family": "立木", "familyRuby": ["たちぎ"], "school": "Arius", "club": "ニコメディアトゥループ"},
+
+    {"name": "スオウ", "family": "朝霧", "familyRuby": ["あさぎり"], "school": "Highlander", "club": "ハイランダー監理室"},
+
+    {"name": "マナミ", "family": "雲類鷲", "familyRuby": ["うるわし"], "school": "WildHunt", "club": "芸術評議会"},
+    {"name": "ミリア", "family": "", "familyRuby": [], "school": "WildHunt", "club": "寮監隊"},
+    {"name": "ヒロミ", "family": "", "familyRuby": [], "school": "WildHunt", "club": "寮監隊"},
+
+    {"name": "ミナト", "family": "海路", "familyRuby": ["うみじ"], "school": "Odyssey", "club": "アイランド"},
+    {"name": "アミ", "family": "灯下", "familyRuby": ["ともした"], "school": "Odyssey", "club": "アイランド"},
+    {"name": "トオル", "family": "", "familyRuby": [], "school": "Odyssey", "club": "トライデント"},
+    {"name": "スミカ", "family": "小森", "familyRuby": ["こもり"], "school": "Odyssey", "club": "トライデント"},
+    {"name": "ミツキ", "family": "千石", "familyRuby": ["せんごく"], "school": "Odyssey", "club": "クルーズ運営部"},
+    {"name": "サナエ", "family": "船守", "familyRuby": ["ふなもり"], "school": "Odyssey", "club": "医務室"},
+    {"name": "マキナ", "family": "", "familyRuby": [], "school": "Odyssey", "club": "ダイビング部"},
+    {"name": "サユリ", "family": "", "familyRuby": [], "school": "Odyssey", "club": "ダイビング部"},
+
+    {"name": "シノン", "family": "川流", "familyRuby": ["かわる"], "school": "Chronos", "club": "クロノス報道部"},
+    {"name": "マイ", "family": "風巻", "familyRuby": ["かざまき", "しまき"], "school": "Chronos", "club": "クロノス報道部"},
+
+    {"name": "アキラ", "family": "清澄", "familyRuby": ["きよすみ"], "school": "Other", "club": "七囚人"},
+    {"name": "カイ", "family": "申谷", "familyRuby": ["しんたに"], "school": "Other", "club": "七囚人"},
+    {"name": "アケミ", "family": "栗浜", "familyRuby": ["くりはま"], "school": "Other", "club": "七囚人"},
+    {"name": "スイコ", "family": "鷹野主", "familyRuby": ["たかのす"], "school": "Other", "club": "所属不明"},
+    {"name": "ナゴミ", "family": "五百雀", "familyRuby": ["いおじゃく"], "school": "Other", "club": "所属不明"},
+    {"name": "ヨウコ", "family": "烏頭尾", "familyRuby": ["うとう"], "school": "Other", "club": "所属不明"},
+    {"name": "キョウコ", "family": "密井", "familyRuby": ["みつい"], "school": "Other", "club": "所属不明"},
+    {"name": "ナナミ", "family": "護守", "familyRuby": ["ごのかみ"], "school": "Other", "club": "所属不明"},
+    {"name": "アン", "family": "不動", "familyRuby": ["ふどう"], "school": "Other", "club": "不動産管理仲介部"},
+    {"name": "アザミ", "family": "土生", "familyRuby": ["はぶ"], "school": "Other", "club": "エビス分校 自治委員会"},
+    {"name": "ソラ", "family": "", "familyRuby": [], "school": "Other", "club": "エンジェル24"}
+  ]
+}
