@@ -42,9 +42,9 @@ def base_name(name):
     return MERGE.get(n, n)
 
 
-def make_answers(name, family, family_rubies):
+def make_answers(name, family, family_rubies, aliases=()):
     """名前だけの回答と、フルネームの回答をひらがな化して返す。"""
-    answers = [to_hira(name)]
+    answers = sorted({to_hira(a) for a in (name, *aliases)})
     full = []
     if family:
         full.append(to_hira(family + name))
@@ -86,7 +86,7 @@ def main():
             print(f"実装済みのため除外: {n['family']}{n['name']}")
             continue
         npc_id += 1
-        answers, full = make_answers(n["name"], n["family"], n["familyRuby"])
+        answers, full = make_answers(n["name"], n["family"], n["familyRuby"], n.get("alias", []))
         people[f"npc:{n['family']}{n['name']}"] = {
             "id": npc_id,
             "name": n["name"],

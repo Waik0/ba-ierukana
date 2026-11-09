@@ -1054,18 +1054,6 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900012,
-   "name": "チエル",
-   "school": "Trinity",
-   "club": "図書委員会",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "ちえる"
-   ],
-   "fullAnswers": []
-  },
-  {
    "id": 16018,
    "name": "ラブ",
    "school": "Trinity",
@@ -1453,7 +1441,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900013,
+   "id": 900012,
    "name": "ミライ",
    "school": "Millennium",
    "club": "疑似科学部",
@@ -1468,7 +1456,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900014,
+   "id": 900013,
    "name": "ツバサ",
    "school": "Millennium",
    "club": "疑似科学部",
@@ -1723,7 +1711,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900021,
+   "id": 900020,
    "name": "ナツキ",
    "school": "Hyakkiyako",
    "club": "人力車部",
@@ -1738,7 +1726,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900015,
+   "id": 900014,
    "name": "クズノハ",
    "school": "Hyakkiyako",
    "club": "大預言者",
@@ -1765,7 +1753,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900016,
+   "id": 900015,
    "name": "アヤメ",
    "school": "Hyakkiyako",
    "club": "百花繚乱紛争調停委員会",
@@ -1780,7 +1768,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900018,
+   "id": 900017,
    "name": "コクリコ",
    "school": "Hyakkiyako",
    "club": "花鳥風月部",
@@ -1795,7 +1783,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900019,
+   "id": 900018,
    "name": "シュロ",
    "school": "Hyakkiyako",
    "club": "花鳥風月部",
@@ -1810,7 +1798,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900020,
+   "id": 900019,
    "name": "アザミ",
    "school": "Hyakkiyako",
    "club": "花鳥風月部",
@@ -1825,7 +1813,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900017,
+   "id": 900016,
    "name": "アラタ",
    "school": "Hyakkiyako",
    "club": "魑魅一座",
@@ -1942,7 +1930,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900023,
+   "id": 900022,
    "name": "カグヤ",
    "school": "Shanhaijing",
    "club": "京劇部",
@@ -1957,7 +1945,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900022,
+   "id": 900021,
    "name": "カナエ",
    "school": "Shanhaijing",
    "club": "玄龍門",
@@ -2227,7 +2215,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900024,
+   "id": 900023,
    "name": "ミスズ",
    "school": "Valkyrie",
    "club": "矯正局",
@@ -2347,7 +2335,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900025,
+   "id": 900024,
    "name": "ユキノ",
    "school": "SRT",
    "club": "FOX小隊",
@@ -2437,7 +2425,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900026,
+   "id": 900025,
    "name": "マイア",
    "school": "Arius",
    "club": "ニコメディアトゥループ",
@@ -2452,7 +2440,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900027,
+   "id": 900026,
    "name": "バルバラ",
    "school": "Arius",
    "club": "ユスティナ聖徒会",
@@ -2509,7 +2497,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900028,
+   "id": 900027,
    "name": "スオウ",
    "school": "Highlander",
    "club": "ハイランダー監理室",
@@ -2629,7 +2617,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900030,
+   "id": 900028,
    "name": "アキラ",
    "school": "WildHunt",
    "club": "寮監隊",
@@ -2644,7 +2632,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900031,
+   "id": 900029,
    "name": "ヒロミ",
    "school": "WildHunt",
    "club": "寮監隊",
@@ -2654,22 +2642,6 @@ window.BA_DATA = {
     "ひろみ"
    ],
    "fullAnswers": []
-  },
-  {
-   "id": 900029,
-   "name": "マナミ",
-   "school": "WildHunt",
-   "club": "芸術評議会",
-   "family": "雲類鷲",
-   "npc": true,
-   "answers": [
-    "まなみ"
-   ],
-   "fullAnswers": [
-    "うるわしまなみ",
-    "雲類鷲まなみ",
-    "霊類鷲まなみ"
-   ]
   },
   {
    "id": 10149,
@@ -2702,7 +2674,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900032,
+   "id": 900030,
    "name": "ミナト",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2717,7 +2689,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900033,
+   "id": 900031,
    "name": "アミ",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2732,7 +2704,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900035,
+   "id": 900033,
    "name": "ミツキ",
    "school": "Odyssey",
    "club": "クルーズ運営部",
@@ -2747,7 +2719,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900037,
+   "id": 900035,
    "name": "マキナ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2759,7 +2731,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900038,
+   "id": 900036,
    "name": "サユリ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2771,7 +2743,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900034,
+   "id": 900032,
    "name": "スミカ",
    "school": "Odyssey",
    "club": "トライデント",
@@ -2786,7 +2758,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900036,
+   "id": 900034,
    "name": "サナエ",
    "school": "Odyssey",
    "club": "医務室",
@@ -2801,7 +2773,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900039,
+   "id": 900037,
    "name": "ナナミ",
    "school": "Odyssey",
    "club": "所属不明",
@@ -2816,7 +2788,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900040,
+   "id": 900038,
    "name": "マイ",
    "school": "Chronos",
    "club": "報道部",
@@ -2831,7 +2803,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900041,
+   "id": 900039,
    "name": "シノン",
    "school": "Chronos",
    "club": "報道部",
@@ -2846,7 +2818,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900047,
+   "id": 900046,
    "name": "ソラ",
    "school": "Other",
    "club": "エンジェル24",
@@ -2858,7 +2830,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900042,
+   "id": 900040,
    "name": "カイ",
    "school": "Other",
    "club": "七囚人",
@@ -2873,7 +2845,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900043,
+   "id": 900041,
    "name": "アケミ",
    "school": "Other",
    "club": "七囚人",
@@ -2888,7 +2860,20 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900044,
+   "id": 900042,
+   "name": "ニヤニヤ教授",
+   "school": "Other",
+   "club": "七囚人",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "にやにやきょうじゅ",
+    "にやにや教授"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900043,
    "name": "スイコ",
    "school": "Other",
    "club": "雛鳥組",
@@ -2903,7 +2888,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900045,
+   "id": 900044,
    "name": "ナゴミ",
    "school": "Other",
    "club": "雛鳥組",
@@ -2918,7 +2903,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900046,
+   "id": 900045,
    "name": "ヨウコ",
    "school": "Other",
    "club": "雛鳥組",

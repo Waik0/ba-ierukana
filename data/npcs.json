@@ -1,5 +1,5 @@
 {
-  "_comment": "未実装（NPC）の生徒。むずかしいモードで出題。familyRuby は名字の読み・表記ゆれの候補（複数可）。実装済みになった生徒は build_students.py が自動で除外する。出典: ブルーアーカイブ攻略 Wiki（wikiru）NPC一覧 https://bluearchive.wikiru.jp/?NPC%E4%B8%80%E8%A6%A7 / Blue Archive Wiki（fandom）Category:NPC https://bluearchive.fandom.com/wiki/Category:NPC",
+  "_comment": "未実装（NPC）の生徒。むずかしいモードで出題。立ち絵（姿）のない生徒は入れない。alias は名前の別表記。familyRuby は名字の読み・表記ゆれの候補（複数可）。実装済みになった生徒は build_students.py が自動で除外する。出典: ブルーアーカイブ攻略 Wiki（wikiru）NPC一覧 https://bluearchive.wikiru.jp/?NPC%E4%B8%80%E8%A6%A7 / Blue Archive Wiki（fandom）Category:NPC https://bluearchive.fandom.com/wiki/Category:NPC",
   "schools": [
     {"key": "GSC", "name": "連邦生徒会", "long": "連邦生徒会", "before": "Abydos"},
     {"key": "Chronos", "name": "クロノス", "long": "クロノススクール", "before": null},
@@ -19,8 +19,6 @@
     {"name": "マユミ", "family": "降旗", "familyRuby": ["ふりはた"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
     {"name": "カレン", "family": "明楽", "familyRuby": ["みょうらく"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
     {"name": "ショウコ", "family": "五十嵐", "familyRuby": ["いがらし"], "school": "Gehenna", "club": "ゲヘナ再興委員会"},
-
-    {"name": "チエル", "family": "", "familyRuby": [], "school": "Trinity", "club": "図書委員会"},
 
     {"name": "ミライ", "family": "吾妻", "familyRuby": ["あづま"], "school": "Millennium", "club": "疑似科学部"},
     {"name": "ツバサ", "family": "羽咋", "familyRuby": ["はねもと"], "school": "Millennium", "club": "疑似科学部"},
@@ -45,7 +43,6 @@
 
     {"name": "スオウ", "family": "朝霧", "familyRuby": ["あさぎり"], "school": "Highlander", "club": "ハイランダー監理室"},
 
-    {"name": "マナミ", "family": "雲類鷲", "familyRuby": ["うるわし", "霊類鷲"], "school": "WildHunt", "club": "芸術評議会"},
     {"name": "アキラ", "family": "清澄", "familyRuby": ["きよすみ"], "school": "WildHunt", "club": "寮監隊"},
     {"name": "ヒロミ", "family": "", "familyRuby": [], "school": "WildHunt", "club": "寮監隊"},
 
@@ -63,6 +60,7 @@
 
     {"name": "カイ", "family": "申谷", "familyRuby": ["しんたに"], "school": "Other", "club": "七囚人"},
     {"name": "アケミ", "family": "栗浜", "familyRuby": ["くりはま"], "school": "Other", "club": "七囚人"},
+    {"name": "ニヤニヤ教授", "family": "", "familyRuby": [], "alias": ["にやにやきょうじゅ"], "school": "Other", "club": "七囚人"},
     {"name": "スイコ", "family": "鷹野主", "familyRuby": ["たかのす"], "school": "Other", "club": "雛鳥組"},
     {"name": "ナゴミ", "family": "五百雀", "familyRuby": ["いおじゃく"], "school": "Other", "club": "雛鳥組"},
     {"name": "ヨウコ", "family": "烏頭尾", "familyRuby": ["うとう"], "school": "Other", "club": "雛鳥組"},
