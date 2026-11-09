@@ -3045,7 +3045,7 @@ window.BA_DATA = {
    "id": 900041,
    "name": "ニヤニヤ教授",
    "school": "Other",
-   "club": "七囚人",
+   "club": "無し",
    "family": "",
    "familyRuby": "",
    "npc": true,

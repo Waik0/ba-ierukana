@@ -60,7 +60,7 @@
 
     {"name": "カイ", "family": "申谷", "familyRuby": ["しんたに"], "school": "Other", "club": "七囚人"},
     {"name": "アケミ", "family": "栗浜", "familyRuby": ["くりはま"], "school": "Other", "club": "七囚人"},
-    {"name": "ニヤニヤ教授", "family": "", "familyRuby": [], "alias": ["にやにやきょうじゅ"], "school": "Other", "club": "七囚人"},
+    {"name": "ニヤニヤ教授", "family": "", "familyRuby": [], "alias": ["にやにやきょうじゅ"], "school": "Other", "club": "無し"},
     {"name": "スイコ", "family": "鷹野主", "familyRuby": ["たかのす"], "school": "Other", "club": "雛鳥組"},
     {"name": "ナゴミ", "family": "五百雀", "familyRuby": ["いおじゃく"], "school": "Other", "club": "雛鳥組"},
     {"name": "ヨウコ", "family": "烏頭尾", "familyRuby": ["うとう"], "school": "Other", "club": "雛鳥組"},
