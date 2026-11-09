@@ -26,6 +26,9 @@ COLLAB = {"ETC", "Tokiwadai", "Sakugawa"}
 # 同一人物としてまとめるもの
 MERGE = {"シロコ＊テラー": "シロコ"}
 
+# SchaleDB に名字がない生徒の名字（名前: (名字, 読み)）
+FAMILY_OVERRIDE = {"ケイ": ("天童", "てんどう")}
+
 
 def fetch(name):
     req = urllib.request.Request(BASE + name, headers={"User-Agent": "ba-ierukana-builder"})
@@ -65,8 +68,10 @@ def main():
         name = base_name(s["Name"])
         if name in people:
             continue
-        family = s["FamilyName"].strip()
-        answers, full = make_answers(name, family, [s["FamilyNameRuby"].strip()])
+        family, ruby = s["FamilyName"].strip(), s["FamilyNameRuby"].strip()
+        if not family and name in FAMILY_OVERRIDE:
+            family, ruby = FAMILY_OVERRIDE[name]
+        answers, full = make_answers(name, family, [ruby])
         people[name] = {
             "id": s["Id"],
             "name": name,

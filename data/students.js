@@ -1418,12 +1418,15 @@ window.BA_DATA = {
    "name": "ケイ",
    "school": "Millennium",
    "club": "特異現象捜査部",
-   "family": "",
+   "family": "天童",
    "npc": false,
    "answers": [
     "けい"
    ],
-   "fullAnswers": []
+   "fullAnswers": [
+    "てんどうけい",
+    "天童けい"
+   ]
   },
   {
    "id": 20020,
