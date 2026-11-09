@@ -3,8 +3,7 @@
   "schools": [
     {"key": "GSC", "name": "連邦生徒会", "long": "連邦生徒会", "before": "Abydos"},
     {"key": "Chronos", "name": "クロノス", "long": "クロノススクール", "before": null},
-    {"key": "Other", "name": "その他", "long": "その他（七囚人・雛鳥組など）", "before": null},
-    {"key": "Decagrammaton", "name": "デカグラマトン", "long": "デカグラマトン", "before": null}
+    {"key": "Other", "name": "その他", "long": "その他（七囚人・雛鳥組など）", "before": null}
   ],
   "students": [
     {"name": "リン", "family": "七神", "familyRuby": ["なながみ"], "school": "GSC", "club": "連邦生徒会"},
@@ -66,9 +65,9 @@
     {"name": "ヨウコ", "family": "烏頭尾", "familyRuby": ["うとう"], "school": "Other", "club": "雛鳥組"},
     {"name": "ソラ", "family": "", "familyRuby": [], "school": "Other", "club": "エンジェル24"},
 
-    {"name": "マルクト", "family": "", "familyRuby": [], "school": "Decagrammaton", "club": "デカグラマトン"},
-    {"name": "アイン", "family": "", "familyRuby": [], "school": "Decagrammaton", "club": "デカグラマトン"},
-    {"name": "ソフ", "family": "", "familyRuby": [], "school": "Decagrammaton", "club": "デカグラマトン"},
-    {"name": "オウル", "family": "", "familyRuby": [], "school": "Decagrammaton", "club": "デカグラマトン"}
+    {"name": "マルクト", "family": "", "familyRuby": [], "school": "Other", "club": "無し"},
+    {"name": "アイン", "family": "", "familyRuby": [], "school": "Other", "club": "無し"},
+    {"name": "ソフ", "family": "", "familyRuby": [], "school": "Other", "club": "無し"},
+    {"name": "オウル", "family": "", "familyRuby": [], "school": "Other", "club": "無し"}
   ]
 }
