@@ -8,7 +8,7 @@
     GSC: "#5a6f9e", Abydos: "#d39a2c", Gehenna: "#d6404f", Trinity: "#c7a03a", Millennium: "#2f7de1",
     Hyakkiyako: "#e0648c", Shanhaijing: "#23a37a", RedWinter: "#a8323b", Valkyrie: "#3a5ba0",
     SRT: "#4d5866", Arius: "#6b5b95", Highlander: "#2c8c99", WildHunt: "#8e44ad",
-    Odyssey: "#1593b8", Chronos: "#e07b39", Other: "#7a7f8c",
+    Odyssey: "#1593b8", Chronos: "#e07b39", Other: "#7a7f8c", Decagrammaton: "#3fb8a8",
   };
   const LEVEL_LABEL = { normal: "ノーマル", hard: "むずかしい" };
   const STORE = "ba-ierukana:";

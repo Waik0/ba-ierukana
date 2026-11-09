@@ -80,6 +80,11 @@ window.BA_DATA = {
    "key": "Other",
    "name": "その他",
    "long": "その他（七囚人・雛鳥組など）"
+  },
+  {
+   "key": "Decagrammaton",
+   "name": "デカグラマトン",
+   "long": "デカグラマトン"
   }
  ],
  "students": [
@@ -3097,6 +3102,58 @@ window.BA_DATA = {
     "うとうようこ",
     "烏頭尾ようこ"
    ]
+  },
+  {
+   "id": 900046,
+   "name": "マルクト",
+   "school": "Decagrammaton",
+   "club": "デカグラマトン",
+   "family": "",
+   "familyRuby": "",
+   "npc": true,
+   "answers": [
+    "まるくと"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900047,
+   "name": "アイン",
+   "school": "Decagrammaton",
+   "club": "デカグラマトン",
+   "family": "",
+   "familyRuby": "",
+   "npc": true,
+   "answers": [
+    "あいん"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900048,
+   "name": "ソフ",
+   "school": "Decagrammaton",
+   "club": "デカグラマトン",
+   "family": "",
+   "familyRuby": "",
+   "npc": true,
+   "answers": [
+    "そふ"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900049,
+   "name": "オウル",
+   "school": "Decagrammaton",
+   "club": "デカグラマトン",
+   "family": "",
+   "familyRuby": "",
+   "npc": true,
+   "answers": [
+    "おうる"
+   ],
+   "fullAnswers": []
   }
  ]
 };
