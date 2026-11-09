@@ -26,4 +26,4 @@ py tools/build_students.py
 
 データは [SchaleDB](https://schaledb.com/) から取得し、衣装違い（「アル（正月）」など）は同一人物としてまとめている。コラボキャラは除外。
 
-NPC（未実装の生徒）は `data/npcs.json` に手で管理している。実装された生徒は自動で NPC から外れる。
+NPC（未実装の生徒）は `data/npcs.json` に手で管理している（名字の読みは [wikiru の NPC一覧](https://bluearchive.wikiru.jp/?NPC%E4%B8%80%E8%A6%A7) の各ページより）。実装された生徒は自動で NPC から外れる。

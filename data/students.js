@@ -79,54 +79,15 @@ window.BA_DATA = {
   {
    "key": "Other",
    "name": "その他",
-   "long": "その他（七囚人など）"
+   "long": "その他（七囚人・雛鳥組など）"
   }
  ],
  "students": [
   {
-   "id": 900002,
-   "name": "モモカ",
-   "school": "GSC",
-   "club": "交通室",
-   "family": "由良木",
-   "npc": true,
-   "answers": [
-    "ももか"
-   ],
-   "fullAnswers": [
-    "ゆらぎももか",
-    "由良木ももか"
-   ]
-  },
-  {
-   "id": 900006,
-   "name": "ハイネ",
-   "school": "GSC",
-   "club": "体育室",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "はいね"
-   ],
-   "fullAnswers": []
-  },
-  {
-   "id": 900007,
-   "name": "スモモ",
-   "school": "GSC",
-   "club": "所属不明",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "すもも"
-   ],
-   "fullAnswers": []
-  },
-  {
    "id": 900001,
    "name": "リン",
    "school": "GSC",
-   "club": "統括室",
+   "club": "連邦生徒会",
    "family": "七神",
    "npc": true,
    "answers": [
@@ -138,10 +99,26 @@ window.BA_DATA = {
    ]
   },
   {
+   "id": 900002,
+   "name": "モモカ",
+   "school": "GSC",
+   "club": "連邦生徒会",
+   "family": "由良木",
+   "npc": true,
+   "answers": [
+    "ももか"
+   ],
+   "fullAnswers": [
+    "ゆらきももか",
+    "ゆらぎももか",
+    "由良木ももか"
+   ]
+  },
+  {
    "id": 900003,
    "name": "アユム",
    "school": "GSC",
-   "club": "調停室",
+   "club": "連邦生徒会",
    "family": "岩櫃",
    "npc": true,
    "answers": [
@@ -153,26 +130,10 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900005,
-   "name": "アオイ",
-   "school": "GSC",
-   "club": "財務室",
-   "family": "扇喜",
-   "npc": true,
-   "answers": [
-    "あおい"
-   ],
-   "fullAnswers": [
-    "おうぎあおい",
-    "おきあおい",
-    "扇喜あおい"
-   ]
-  },
-  {
    "id": 900004,
    "name": "カヤ",
    "school": "GSC",
-   "club": "防衛室",
+   "club": "連邦生徒会",
    "family": "不知火",
    "npc": true,
    "answers": [
@@ -182,6 +143,45 @@ window.BA_DATA = {
     "しらぬいかや",
     "不知火かや"
    ]
+  },
+  {
+   "id": 900005,
+   "name": "アオイ",
+   "school": "GSC",
+   "club": "連邦生徒会",
+   "family": "扇喜",
+   "npc": true,
+   "answers": [
+    "あおい"
+   ],
+   "fullAnswers": [
+    "おきあおい",
+    "扇喜あおい"
+   ]
+  },
+  {
+   "id": 900006,
+   "name": "ハイネ",
+   "school": "GSC",
+   "club": "連邦生徒会",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "はいね"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900007,
+   "name": "スモモ",
+   "school": "GSC",
+   "club": "連邦生徒会",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "すもも"
+   ],
+   "fullAnswers": []
   },
   {
    "id": 10005,
@@ -1054,18 +1054,6 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900012,
-   "name": "チエル",
-   "school": "Trinity",
-   "club": "図書委員会",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "ちえる"
-   ],
-   "fullAnswers": []
-  },
-  {
    "id": 16018,
    "name": "ラブ",
    "school": "Trinity",
@@ -1453,23 +1441,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900014,
-   "name": "ツバサ",
-   "school": "Millennium",
-   "club": "モー超常現象研究所",
-   "family": "羽咋",
-   "npc": true,
-   "answers": [
-    "つばさ"
-   ],
-   "fullAnswers": [
-    "はくいつばさ",
-    "はねもとつばさ",
-    "羽咋つばさ"
-   ]
-  },
-  {
-   "id": 900013,
+   "id": 900012,
    "name": "ミライ",
    "school": "Millennium",
    "club": "疑似科学部",
@@ -1479,9 +1451,23 @@ window.BA_DATA = {
     "みらい"
    ],
    "fullAnswers": [
-    "あずまみらい",
     "あづまみらい",
     "吾妻みらい"
+   ]
+  },
+  {
+   "id": 900013,
+   "name": "ツバサ",
+   "school": "Millennium",
+   "club": "疑似科学部",
+   "family": "羽咋",
+   "npc": true,
+   "answers": [
+    "つばさ"
+   ],
+   "fullAnswers": [
+    "はねもとつばさ",
+    "羽咋つばさ"
    ]
   },
   {
@@ -1725,7 +1711,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900016,
+   "id": 900020,
    "name": "ナツキ",
    "school": "Hyakkiyako",
    "club": "人力車部",
@@ -1740,22 +1726,10 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900019,
-   "name": "ミクリ",
-   "school": "Hyakkiyako",
-   "club": "修行部（体験入部）",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "みくり"
-   ],
-   "fullAnswers": []
-  },
-  {
-   "id": 900021,
+   "id": 900014,
    "name": "クズノハ",
    "school": "Hyakkiyako",
-   "club": "所属不明",
+   "club": "大預言者",
    "family": "",
    "npc": true,
    "answers": [
@@ -1795,6 +1769,18 @@ window.BA_DATA = {
   },
   {
    "id": 900017,
+   "name": "コクリコ",
+   "school": "Hyakkiyako",
+   "club": "花鳥風月部",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "こくりこ"
+   ],
+   "fullAnswers": []
+  },
+  {
+   "id": 900018,
    "name": "シュロ",
    "school": "Hyakkiyako",
    "club": "花鳥風月部",
@@ -1809,19 +1795,22 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900018,
-   "name": "コクリコ",
+   "id": 900019,
+   "name": "アザミ",
    "school": "Hyakkiyako",
    "club": "花鳥風月部",
-   "family": "",
+   "family": "土生",
    "npc": true,
    "answers": [
-    "こくりこ"
+    "あざみ"
    ],
-   "fullAnswers": []
+   "fullAnswers": [
+    "はぶあざみ",
+    "土生あざみ"
+   ]
   },
   {
-   "id": 900020,
+   "id": 900016,
    "name": "アラタ",
    "school": "Hyakkiyako",
    "club": "魑魅一座",
@@ -1938,7 +1927,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900023,
+   "id": 900022,
    "name": "カグヤ",
    "school": "Shanhaijing",
    "club": "京劇部",
@@ -1953,7 +1942,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900022,
+   "id": 900021,
    "name": "カナエ",
    "school": "Shanhaijing",
    "club": "玄龍門",
@@ -2223,7 +2212,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900024,
+   "id": 900023,
    "name": "ミスズ",
    "school": "Valkyrie",
    "club": "矯正局",
@@ -2343,7 +2332,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900025,
+   "id": 900024,
    "name": "ユキノ",
    "school": "SRT",
    "club": "FOX小隊",
@@ -2354,7 +2343,6 @@ window.BA_DATA = {
    ],
    "fullAnswers": [
     "しちどゆきの",
-    "ななたびゆきの",
     "七度ゆきの"
    ]
   },
@@ -2434,7 +2422,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900026,
+   "id": 900025,
    "name": "マイア",
    "school": "Arius",
    "club": "ニコメディアトゥループ",
@@ -2447,6 +2435,18 @@ window.BA_DATA = {
     "たちぎまいあ",
     "立木まいあ"
    ]
+  },
+  {
+   "id": 900026,
+   "name": "バルバラ",
+   "school": "Arius",
+   "club": "ユスティナ聖徒会",
+   "family": "",
+   "npc": true,
+   "answers": [
+    "ばるばら"
+   ],
+   "fullAnswers": []
   },
   {
    "id": 10117,
@@ -2614,19 +2614,22 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900029,
-   "name": "ミリア",
+   "id": 900028,
+   "name": "アキラ",
    "school": "WildHunt",
    "club": "寮監隊",
-   "family": "",
+   "family": "清澄",
    "npc": true,
    "answers": [
-    "みりあ"
+    "あきら"
    ],
-   "fullAnswers": []
+   "fullAnswers": [
+    "きよすみあきら",
+    "清澄あきら"
+   ]
   },
   {
-   "id": 900030,
+   "id": 900029,
    "name": "ヒロミ",
    "school": "WildHunt",
    "club": "寮監隊",
@@ -2636,21 +2639,6 @@ window.BA_DATA = {
     "ひろみ"
    ],
    "fullAnswers": []
-  },
-  {
-   "id": 900028,
-   "name": "マナミ",
-   "school": "WildHunt",
-   "club": "芸術評議会",
-   "family": "雲類鷲",
-   "npc": true,
-   "answers": [
-    "まなみ"
-   ],
-   "fullAnswers": [
-    "うるわしまなみ",
-    "雲類鷲まなみ"
-   ]
   },
   {
    "id": 10149,
@@ -2683,7 +2671,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900031,
+   "id": 900030,
    "name": "ミナト",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2698,7 +2686,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900032,
+   "id": 900031,
    "name": "アミ",
    "school": "Odyssey",
    "club": "アイランド",
@@ -2713,7 +2701,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900035,
+   "id": 900033,
    "name": "ミツキ",
    "school": "Odyssey",
    "club": "クルーズ運営部",
@@ -2728,7 +2716,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900037,
+   "id": 900035,
    "name": "マキナ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2740,7 +2728,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900038,
+   "id": 900036,
    "name": "サユリ",
    "school": "Odyssey",
    "club": "ダイビング部",
@@ -2752,19 +2740,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900033,
-   "name": "トオル",
-   "school": "Odyssey",
-   "club": "トライデント",
-   "family": "",
-   "npc": true,
-   "answers": [
-    "とおる"
-   ],
-   "fullAnswers": []
-  },
-  {
-   "id": 900034,
+   "id": 900032,
    "name": "スミカ",
    "school": "Odyssey",
    "club": "トライデント",
@@ -2779,7 +2755,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900036,
+   "id": 900034,
    "name": "サナエ",
    "school": "Odyssey",
    "club": "医務室",
@@ -2794,10 +2770,40 @@ window.BA_DATA = {
    ]
   },
   {
+   "id": 900037,
+   "name": "ナナミ",
+   "school": "Odyssey",
+   "club": "所属不明",
+   "family": "護守",
+   "npc": true,
+   "answers": [
+    "ななみ"
+   ],
+   "fullAnswers": [
+    "ごのかみななみ",
+    "護守ななみ"
+   ]
+  },
+  {
+   "id": 900038,
+   "name": "マイ",
+   "school": "Chronos",
+   "club": "報道部",
+   "family": "風巻",
+   "npc": true,
+   "answers": [
+    "まい"
+   ],
+   "fullAnswers": [
+    "かざまきまい",
+    "風巻まい"
+   ]
+  },
+  {
    "id": 900039,
    "name": "シノン",
    "school": "Chronos",
-   "club": "クロノス報道部",
+   "club": "報道部",
    "family": "川流",
    "npc": true,
    "answers": [
@@ -2809,38 +2815,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900040,
-   "name": "マイ",
-   "school": "Chronos",
-   "club": "クロノス報道部",
-   "family": "風巻",
-   "npc": true,
-   "answers": [
-    "まい"
-   ],
-   "fullAnswers": [
-    "かざまきまい",
-    "しまきまい",
-    "風巻まい"
-   ]
-  },
-  {
-   "id": 900050,
-   "name": "アザミ",
-   "school": "Other",
-   "club": "エビス分校 自治委員会",
-   "family": "土生",
-   "npc": true,
-   "answers": [
-    "あざみ"
-   ],
-   "fullAnswers": [
-    "はぶあざみ",
-    "土生あざみ"
-   ]
-  },
-  {
-   "id": 900051,
+   "id": 900045,
    "name": "ソラ",
    "school": "Other",
    "club": "エンジェル24",
@@ -2852,22 +2827,7 @@ window.BA_DATA = {
    "fullAnswers": []
   },
   {
-   "id": 900041,
-   "name": "アキラ",
-   "school": "Other",
-   "club": "七囚人",
-   "family": "清澄",
-   "npc": true,
-   "answers": [
-    "あきら"
-   ],
-   "fullAnswers": [
-    "きよすみあきら",
-    "清澄あきら"
-   ]
-  },
-  {
-   "id": 900042,
+   "id": 900040,
    "name": "カイ",
    "school": "Other",
    "club": "七囚人",
@@ -2882,7 +2842,7 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900043,
+   "id": 900041,
    "name": "アケミ",
    "school": "Other",
    "club": "七囚人",
@@ -2897,25 +2857,10 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900049,
-   "name": "アン",
-   "school": "Other",
-   "club": "不動産管理仲介部",
-   "family": "不動",
-   "npc": true,
-   "answers": [
-    "あん"
-   ],
-   "fullAnswers": [
-    "ふどうあん",
-    "不動あん"
-   ]
-  },
-  {
-   "id": 900044,
+   "id": 900042,
    "name": "スイコ",
    "school": "Other",
-   "club": "所属不明",
+   "club": "雛鳥組",
    "family": "鷹野主",
    "npc": true,
    "answers": [
@@ -2927,10 +2872,10 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900045,
+   "id": 900043,
    "name": "ナゴミ",
    "school": "Other",
-   "club": "所属不明",
+   "club": "雛鳥組",
    "family": "五百雀",
    "npc": true,
    "answers": [
@@ -2942,10 +2887,10 @@ window.BA_DATA = {
    ]
   },
   {
-   "id": 900046,
+   "id": 900044,
    "name": "ヨウコ",
    "school": "Other",
-   "club": "所属不明",
+   "club": "雛鳥組",
    "family": "烏頭尾",
    "npc": true,
    "answers": [
@@ -2954,36 +2899,6 @@ window.BA_DATA = {
    "fullAnswers": [
     "うとうようこ",
     "烏頭尾ようこ"
-   ]
-  },
-  {
-   "id": 900047,
-   "name": "キョウコ",
-   "school": "Other",
-   "club": "所属不明",
-   "family": "密井",
-   "npc": true,
-   "answers": [
-    "きょうこ"
-   ],
-   "fullAnswers": [
-    "みついきょうこ",
-    "密井きょうこ"
-   ]
-  },
-  {
-   "id": 900048,
-   "name": "ナナミ",
-   "school": "Other",
-   "club": "所属不明",
-   "family": "護守",
-   "npc": true,
-   "answers": [
-    "ななみ"
-   ],
-   "fullAnswers": [
-    "ごのかみななみ",
-    "護守ななみ"
    ]
   }
  ]
